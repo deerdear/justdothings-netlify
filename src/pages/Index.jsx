@@ -9,17 +9,37 @@ const Index = () => {
       circle.style.height = circle.style.width;
       circle.style.left = `${Math.random() * 100}vw`;
       circle.style.top = `${Math.random() * 100}vh`;
-      circle.style.animationDuration = `${Math.random() * 5 + 5}s, ${Math.random() * 10 + 10}s`;
+      circle.style.animationDuration = `${Math.random() * 10 + 10}s, ${Math.random() * 15 + 15}s`;
+      circle.style.opacity = '0.7';
       document.querySelector('.random-bg').appendChild(circle);
     };
 
     for (let i = 0; i < 20; i++) {
       createRandomCircle();
     }
+
+    // Add more circles over time for a dynamic effect
+    const interval = setInterval(() => {
+      if (document.querySelectorAll('.random-circle').length < 50) {
+        createRandomCircle();
+      }
+    }, 2000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="min-h-screen font-mono relative overflow-hidden">
+      <style jsx>{`
+        @keyframes randomColors {
+          0% { background-color: #8B4513; }  /* Saddle Brown */
+          20% { background-color: #CD853F; } /* Peru */
+          40% { background-color: #DEB887; } /* Burlywood */
+          60% { background-color: #D2691E; } /* Chocolate */
+          80% { background-color: #A0522D; } /* Sienna */
+          100% { background-color: #8B4513; } /* Saddle Brown */
+        }
+      `}</style>
       <div className="random-bg"></div>
       <div className="relative z-10 p-8">
         <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
