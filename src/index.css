@@ -75,10 +75,15 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+  font-family: 'Departure Mono';
+  src: url('/fonts/DepartureMono-VF.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
 
-.font-pixel {
-  font-family: 'Press Start 2P', cursive;
+.font-mono {
+  font-family: 'Departure Mono', monospace;
 }
 
 @keyframes hypnotic {

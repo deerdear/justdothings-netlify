@@ -2,11 +2,11 @@ import React from 'react';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-black text-green-400 p-8 font-pixel relative">
+    <div className="min-h-screen bg-black text-green-400 p-8 font-mono relative">
       <div className="hypnotic-bg"></div>
       <header className="mb-12">
-        <h1 className="text-3xl font-bold mb-4">John Doe</h1>
-        <p className="text-sm">Software Developer | Retro Enthusiast</p>
+        <h1 className="text-4xl font-bold mb-4 tracking-tight">John Doe</h1>
+        <p className="text-base tracking-wide">Software Developer | Retro Enthusiast</p>
       </header>
       
       <nav className="mb-12">
@@ -19,13 +19,13 @@ const Index = () => {
       
       <main className="space-y-12">
         <section id="about">
-          <h2 className="text-xl font-bold mb-4">About Me</h2>
-          <p className="text-sm leading-relaxed">Hello, I'm John Doe. I love creating retro-style websites and applications.</p>
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">About Me</h2>
+          <p className="text-base leading-relaxed tracking-wide">Hello, I'm John Doe. I love creating retro-style websites and applications.</p>
         </section>
         
         <section id="projects">
-          <h2 className="text-xl font-bold mb-4">Projects</h2>
-          <ul className="text-sm space-y-2">
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">Projects</h2>
+          <ul className="text-base space-y-2 tracking-wide">
             <li>► Retro Game Engine</li>
             <li>► Vintage CSS Framework</li>
             <li>► Old School Blog Platform</li>
@@ -33,14 +33,14 @@ const Index = () => {
         </section>
         
         <section id="contact">
-          <h2 className="text-xl font-bold mb-4">Contact</h2>
-          <p className="text-sm">Email: john@retrodev.com</p>
-          <p className="text-sm">GitHub: @johndoe-retro</p>
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">Contact</h2>
+          <p className="text-base tracking-wide">Email: john@retrodev.com</p>
+          <p className="text-base tracking-wide">GitHub: @johndoe-retro</p>
         </section>
       </main>
       
       <footer className="mt-12 text-center">
-        <p className="text-xs">&copy; 2023 John Doe. All rights reserved.</p>
+        <p className="text-sm tracking-wide">&copy; 2023 John Doe. All rights reserved.</p>
       </footer>
     </div>
   );
