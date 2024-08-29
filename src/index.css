@@ -74,3 +74,27 @@
     @apply bg-background text-foreground;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.font-mono {
+  font-family: 'VT323', monospace;
+}
+
+/* Custom scrollbar for retro feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc00;
+}
