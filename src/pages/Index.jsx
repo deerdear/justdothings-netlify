@@ -2,69 +2,60 @@ import React from 'react';
 
 const Index = () => {
   React.useEffect(() => {
-    const createRandomCircle = () => {
+    const createHypnoCircle = () => {
       const circle = document.createElement('div');
-      circle.classList.add('random-circle');
-      circle.style.width = `${Math.random() * 100 + 50}px`;
-      circle.style.height = circle.style.width;
+      circle.classList.add('hypno-circle');
+      const size = Math.random() * 200 + 100;
+      circle.style.width = `${size}px`;
+      circle.style.height = `${size}px`;
       circle.style.left = `${Math.random() * 100}vw`;
       circle.style.top = `${Math.random() * 100}vh`;
-      circle.style.animationDuration = `${Math.random() * 10 + 10}s, ${Math.random() * 15 + 15}s`;
-      circle.style.opacity = '0.7';
-      document.querySelector('.random-bg').appendChild(circle);
+      circle.style.animationDuration = `${Math.random() * 15 + 10}s, ${Math.random() * 20 + 15}s`;
+      circle.style.opacity = '0.6';
+      document.querySelector('.hypno-bg').appendChild(circle);
     };
 
-    for (let i = 0; i < 20; i++) {
-      createRandomCircle();
+    for (let i = 0; i < 15; i++) {
+      createHypnoCircle();
     }
 
     // Add more circles over time for a dynamic effect
     const interval = setInterval(() => {
-      if (document.querySelectorAll('.random-circle').length < 50) {
-        createRandomCircle();
+      if (document.querySelectorAll('.hypno-circle').length < 30) {
+        createHypnoCircle();
       }
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="min-h-screen font-mono relative overflow-hidden">
-      <style jsx>{`
-        @keyframes randomColors {
-          0% { background-color: #8B4513; }  /* Saddle Brown */
-          20% { background-color: #CD853F; } /* Peru */
-          40% { background-color: #DEB887; } /* Burlywood */
-          60% { background-color: #D2691E; } /* Chocolate */
-          80% { background-color: #A0522D; } /* Sienna */
-          100% { background-color: #8B4513; } /* Saddle Brown */
-        }
-      `}</style>
-      <div className="random-bg"></div>
+      <div className="hypno-bg"></div>
       <div className="relative z-10 p-8">
-        <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
+        <div className="max-w-3xl mx-auto bg-black/80 border border-cyan-500 rounded-lg shadow-lg p-8 backdrop-blur-md">
           <header className="mb-12">
-            <h1 className="text-4xl font-bold mb-4 tracking-tight text-gray-800">John Doe</h1>
-            <p className="text-base tracking-wide text-gray-700">Software Developer | Retro Enthusiast</p>
+            <h1 className="text-3xl font-bold mb-4 tracking-tight text-cyan-400">John Doe</h1>
+            <p className="text-sm tracking-wide text-cyan-300">Software Developer | Retro Enthusiast</p>
           </header>
           
           <nav className="mb-12">
             <ul className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6">
-              <li><a href="#about" className="hover:text-blue-600 transition-colors text-gray-700">About</a></li>
-              <li><a href="#projects" className="hover:text-blue-600 transition-colors text-gray-700">Projects</a></li>
-              <li><a href="#contact" className="hover:text-blue-600 transition-colors text-gray-700">Contact</a></li>
+              <li><a href="#about" className="hover:text-pink-400 transition-colors text-cyan-300">About</a></li>
+              <li><a href="#projects" className="hover:text-pink-400 transition-colors text-cyan-300">Projects</a></li>
+              <li><a href="#contact" className="hover:text-pink-400 transition-colors text-cyan-300">Contact</a></li>
             </ul>
           </nav>
           
           <main className="space-y-12">
             <section id="about">
-              <h2 className="text-2xl font-bold mb-4 tracking-tight text-gray-800">About Me</h2>
-              <p className="text-base leading-relaxed tracking-wide text-gray-700">Hello, I'm John Doe. I love creating retro-style websites and applications.</p>
+              <h2 className="text-xl font-bold mb-4 tracking-tight text-pink-400">About Me</h2>
+              <p className="text-sm leading-relaxed tracking-wide text-cyan-300">Hello, I'm John Doe. I love creating retro-style websites and applications.</p>
             </section>
             
             <section id="projects">
-              <h2 className="text-2xl font-bold mb-4 tracking-tight text-gray-800">Projects</h2>
-              <ul className="text-base space-y-2 tracking-wide text-gray-700">
+              <h2 className="text-xl font-bold mb-4 tracking-tight text-pink-400">Projects</h2>
+              <ul className="text-sm space-y-2 tracking-wide text-cyan-300">
                 <li>► Retro Game Engine</li>
                 <li>► Vintage CSS Framework</li>
                 <li>► Old School Blog Platform</li>
@@ -72,14 +63,14 @@ const Index = () => {
             </section>
             
             <section id="contact">
-              <h2 className="text-2xl font-bold mb-4 tracking-tight text-gray-800">Contact</h2>
-              <p className="text-base tracking-wide text-gray-700">Email: john@retrodev.com</p>
-              <p className="text-base tracking-wide text-gray-700">GitHub: @johndoe-retro</p>
+              <h2 className="text-xl font-bold mb-4 tracking-tight text-pink-400">Contact</h2>
+              <p className="text-sm tracking-wide text-cyan-300">Email: john@retrodev.com</p>
+              <p className="text-sm tracking-wide text-cyan-300">GitHub: @johndoe-retro</p>
             </section>
           </main>
           
           <footer className="mt-12 text-center">
-            <p className="text-sm tracking-wide text-gray-700">&copy; 2023 John Doe. All rights reserved.</p>
+            <p className="text-xs tracking-wide text-cyan-400">&copy; 2023 John Doe. All rights reserved.</p>
           </footer>
         </div>
       </div>
