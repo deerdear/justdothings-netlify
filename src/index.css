@@ -75,50 +75,56 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-.font-pixel {
-  font-family: 'Press Start 2P', cursive;
+@font-face {
+  font-family: 'Departure Mono';
+  src: url('/fonts/DepartureMono-VF.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
 }
 
-@keyframes colorChange {
-  0% { background-color: #ff00ff; }
-  20% { background-color: #00ffff; }
-  40% { background-color: #ffff00; }
-  60% { background-color: #ff00aa; }
-  80% { background-color: #00ff99; }
-  100% { background-color: #ff00ff; }
+.font-mono {
+  font-family: 'Departure Mono', monospace;
 }
 
-@keyframes randomColors {
-  0% { background-color: #ff00ff; }
-  25% { background-color: #00ffff; }
-  50% { background-color: #ffff00; }
-  75% { background-color: #ff0000; }
-  100% { background-color: #00ff00; }
+@font-face {
+  font-family: 'Departure Mono';
+  src: url('/fonts/DepartureMono-VF.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
 }
 
-@keyframes randomMove {
-  0%, 100% { transform: translate(0, 0); }
-  25% { transform: translate(10px, 10px); }
-  50% { transform: translate(-10px, 10px); }
-  75% { transform: translate(-10px, -10px); }
+.font-mono {
+  font-family: 'Departure Mono', monospace;
 }
 
-.random-bg {
+@keyframes hypnotic {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hypnotic-bg {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  overflow: hidden;
-}
-
-.random-circle {
-  position: absolute;
-  border-radius: 50%;
-  animation: randomColors 5s infinite, randomMove 10s infinite;
+  background: 
+    repeating-radial-gradient(
+      circle at center,
+      #000000,
+      #000000 10px,
+      #00ff00 10px,
+      #00ff00 20px
+    );
+  animation: hypnotic 5s infinite;
 }
 
 /* Custom scrollbar for retro feel */
