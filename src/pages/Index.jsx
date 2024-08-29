@@ -1,11 +1,28 @@
 import React from 'react';
 
 const Index = () => {
+  React.useEffect(() => {
+    const createRandomCircle = () => {
+      const circle = document.createElement('div');
+      circle.classList.add('random-circle');
+      circle.style.width = `${Math.random() * 100 + 50}px`;
+      circle.style.height = circle.style.width;
+      circle.style.left = `${Math.random() * 100}vw`;
+      circle.style.top = `${Math.random() * 100}vh`;
+      circle.style.animationDuration = `${Math.random() * 5 + 5}s, ${Math.random() * 10 + 10}s`;
+      document.querySelector('.random-bg').appendChild(circle);
+    };
+
+    for (let i = 0; i < 20; i++) {
+      createRandomCircle();
+    }
+  }, []);
+
   return (
     <div className="min-h-screen font-mono relative overflow-hidden">
-      <div className="hypnotic-bg"></div>
+      <div className="random-bg"></div>
       <div className="relative z-10 p-8">
-        <div className="max-w-3xl mx-auto bg-white/80 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-sm">
+        <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
           <header className="mb-12">
             <h1 className="text-4xl font-bold mb-4 tracking-tight text-gray-800">John Doe</h1>
             <p className="text-base tracking-wide text-gray-700">Software Developer | Retro Enthusiast</p>
