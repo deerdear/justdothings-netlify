@@ -90,14 +90,22 @@
   100% { background-color: #ff00ff; }
 }
 
-@keyframes hypnoticMove {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(15px, 15px) rotate(90deg); }
-  50% { transform: translate(-15px, 15px) rotate(180deg); }
-  75% { transform: translate(-15px, -15px) rotate(270deg); }
+@keyframes randomColors {
+  0% { background-color: #ff00ff; }
+  25% { background-color: #00ffff; }
+  50% { background-color: #ffff00; }
+  75% { background-color: #ff0000; }
+  100% { background-color: #00ff00; }
 }
 
-.hypno-bg {
+@keyframes randomMove {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(10px, 10px); }
+  50% { transform: translate(-10px, 10px); }
+  75% { transform: translate(-10px, -10px); }
+}
+
+.random-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -105,14 +113,12 @@
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  background-color: #000;
 }
 
-.hypno-circle {
+.random-circle {
   position: absolute;
   border-radius: 50%;
-  animation: colorChange 10s infinite, hypnoticMove 15s infinite;
-  mix-blend-mode: screen;
+  animation: randomColors 5s infinite, randomMove 10s infinite;
 }
 
 /* Custom scrollbar for retro feel */
