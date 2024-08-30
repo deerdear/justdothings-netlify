@@ -97,22 +97,25 @@
   font-family: 'Departure Mono', monospace;
 }
 
-@keyframes randomColors {
-  0% { background-color: #ff00ff; }
-  25% { background-color: #00ffff; }
-  50% { background-color: #ffff00; }
-  75% { background-color: #ff0000; }
-  100% { background-color: #00ff00; }
+@keyframes floatParticle {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(100px, -50px) rotate(90deg);
+  }
+  50% {
+    transform: translate(200px, 0) rotate(180deg);
+  }
+  75% {
+    transform: translate(100px, 50px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
 }
 
-@keyframes randomMove {
-  0%, 100% { transform: translate(0, 0); }
-  25% { transform: translate(10px, 10px); }
-  50% { transform: translate(-10px, 10px); }
-  75% { transform: translate(-10px, -10px); }
-}
-
-.random-bg {
+.particle-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -122,14 +125,13 @@
   overflow: hidden;
 }
 
-.random-shape {
+.particle {
   position: absolute;
-  animation: randomColors 5s infinite, randomMove 10s infinite, randomRotate 15s infinite linear;
-}
-
-@keyframes randomRotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  width: 5px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: floatParticle 20s infinite linear;
 }
 
 /* Custom scrollbar for retro feel */

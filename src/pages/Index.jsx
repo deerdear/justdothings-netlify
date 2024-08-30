@@ -2,62 +2,40 @@ import React from 'react';
 
 const Index = () => {
   React.useEffect(() => {
-    const createRandomShape = () => {
-      const shape = document.createElement('div');
-      shape.classList.add('random-shape');
-      
-      // Random size
-      const size = Math.random() * 100 + 50;
-      shape.style.width = `${size}px`;
-      shape.style.height = `${size}px`;
+    const createParticle = () => {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
       
       // Random position
-      shape.style.left = `${Math.random() * 100}vw`;
-      shape.style.top = `${Math.random() * 100}vh`;
+      particle.style.left = `${Math.random() * 100}vw`;
+      particle.style.top = `${Math.random() * 100}vh`;
       
-      // Create irregular shape using SVG
-      const svgNS = "http://www.w3.org/2000/svg";
-      const svg = document.createElementNS(svgNS, "svg");
-      svg.setAttribute("width", "100%");
-      svg.setAttribute("height", "100%");
-      svg.setAttribute("viewBox", "0 0 100 100");
+      // Random size (smaller than before)
+      const size = Math.random() * 3 + 2;
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
       
-      const path = document.createElementNS(svgNS, "path");
+      // Random opacity
+      particle.style.opacity = Math.random() * 0.5 + 0.1;
       
-      // Generate random path for cloud-like or swirl-like shape
-      let d = "M50,50 ";
-      const points = 8 + Math.floor(Math.random() * 5); // 8 to 12 points
-      for (let i = 0; i < points; i++) {
-        const angle = (i / points) * Math.PI * 2;
-        const radius = 30 + Math.random() * 20;
-        const x = 50 + Math.cos(angle) * radius;
-        const y = 50 + Math.sin(angle) * radius;
-        const controlX = 50 + Math.cos(angle + 0.5) * (radius * 1.2);
-        const controlY = 50 + Math.sin(angle + 0.5) * (radius * 1.2);
-        d += `Q${controlX},${controlY} ${x},${y} `;
-      }
-      d += "Z";
+      // Random animation duration and delay
+      const duration = Math.random() * 15 + 10;
+      const delay = Math.random() * -20;
+      particle.style.animationDuration = `${duration}s`;
+      particle.style.animationDelay = `${delay}s`;
       
-      path.setAttribute("d", d);
-      path.setAttribute("fill", "currentColor");
-      svg.appendChild(path);
-      
-      shape.appendChild(svg);
-      
-      // Random animation duration
-      shape.style.animationDuration = `${Math.random() * 5 + 5}s, ${Math.random() * 10 + 10}s, ${Math.random() * 15 + 15}s`;
-      
-      document.querySelector('.random-bg').appendChild(shape);
+      document.querySelector('.particle-bg').appendChild(particle);
     };
 
-    for (let i = 0; i < 20; i++) {
-      createRandomShape();
+    // Create more particles
+    for (let i = 0; i < 100; i++) {
+      createParticle();
     }
   }, []);
 
   return (
     <div className="min-h-screen font-mono relative overflow-hidden">
-      <div className="random-bg"></div>
+      <div className="particle-bg"></div>
       <div className="relative z-10 p-8">
         <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
           <header className="mb-12">
