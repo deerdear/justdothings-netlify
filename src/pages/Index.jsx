@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 const Index = () => {
   const particleContainerRef = useRef(null);
+  const cursorTrailRef = useRef(null);
 
   useEffect(() => {
     const createParticle = () => {
@@ -39,17 +40,32 @@ const Index = () => {
       }
     };
 
+    const createCursorTrail = (e) => {
+      const trail = document.createElement('div');
+      trail.className = 'cursor-trail';
+      trail.style.left = `${e.clientX}px`;
+      trail.style.top = `${e.clientY}px`;
+      cursorTrailRef.current.appendChild(trail);
+
+      setTimeout(() => {
+        trail.remove();
+      }, 500);
+    };
+
     animateParticles();
     window.addEventListener('resize', animateParticles);
+    document.addEventListener('mousemove', createCursorTrail);
 
     return () => {
       window.removeEventListener('resize', animateParticles);
+      document.removeEventListener('mousemove', createCursorTrail);
     };
   }, []);
 
   return (
     <div className="min-h-screen font-mono relative overflow-hidden">
       <div ref={particleContainerRef} className="particle-bg"></div>
+      <div ref={cursorTrailRef} className="cursor-trail-container"></div>
       <div className="relative z-10 p-8">
         <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
           <header className="mb-12">
