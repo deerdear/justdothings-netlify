@@ -122,10 +122,14 @@
   overflow: hidden;
 }
 
-.random-circle {
+.random-shape {
   position: absolute;
-  border-radius: 50%;
-  animation: randomColors 5s infinite, randomMove 10s infinite;
+  animation: randomColors 5s infinite, randomMove 10s infinite, randomRotate 15s infinite linear;
+}
+
+@keyframes randomRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* Custom scrollbar for retro feel */

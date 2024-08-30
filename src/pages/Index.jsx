@@ -2,19 +2,47 @@ import React from 'react';
 
 const Index = () => {
   React.useEffect(() => {
-    const createRandomCircle = () => {
-      const circle = document.createElement('div');
-      circle.classList.add('random-circle');
-      circle.style.width = `${Math.random() * 100 + 50}px`;
-      circle.style.height = circle.style.width;
-      circle.style.left = `${Math.random() * 100}vw`;
-      circle.style.top = `${Math.random() * 100}vh`;
-      circle.style.animationDuration = `${Math.random() * 5 + 5}s, ${Math.random() * 10 + 10}s`;
-      document.querySelector('.random-bg').appendChild(circle);
+    const createRandomShape = () => {
+      const shape = document.createElement('div');
+      shape.classList.add('random-shape');
+      
+      // Random size
+      const size = Math.random() * 100 + 50;
+      shape.style.width = `${size}px`;
+      shape.style.height = `${size}px`;
+      
+      // Random position
+      shape.style.left = `${Math.random() * 100}vw`;
+      shape.style.top = `${Math.random() * 100}vh`;
+      
+      // Random shape
+      const shapeType = Math.floor(Math.random() * 4);
+      switch(shapeType) {
+        case 0: // Triangle
+          shape.style.clipPath = 'polygon(50% 0%, 0% 100%, 100% 100%)';
+          break;
+        case 1: // Pentagon
+          shape.style.clipPath = 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)';
+          break;
+        case 2: // Star
+          shape.style.clipPath = 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)';
+          break;
+        default: // Irregular polygon
+          const points = [];
+          for (let i = 0; i < 6; i++) {
+            points.push(`${Math.random() * 100}% ${Math.random() * 100}%`);
+          }
+          shape.style.clipPath = `polygon(${points.join(', ')})`;
+      }
+      
+      // Random animation duration
+      shape.style.animationDuration = `${Math.random() * 5 + 5}s, ${Math.random() * 10 + 10}s, ${Math.random() * 15 + 15}s`;
+      
+      document.querySelector('.random-bg').appendChild(shape);
     };
 
     for (let i = 0; i < 20; i++) {
-      createRandomCircle();
+      createRandomShape();
     }
   }, []);
 
