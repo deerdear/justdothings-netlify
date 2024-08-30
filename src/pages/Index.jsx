@@ -15,25 +15,34 @@ const Index = () => {
       shape.style.left = `${Math.random() * 100}vw`;
       shape.style.top = `${Math.random() * 100}vh`;
       
-      // Random shape
-      const shapeType = Math.floor(Math.random() * 4);
-      switch(shapeType) {
-        case 0: // Triangle
-          shape.style.clipPath = 'polygon(50% 0%, 0% 100%, 100% 100%)';
-          break;
-        case 1: // Pentagon
-          shape.style.clipPath = 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)';
-          break;
-        case 2: // Star
-          shape.style.clipPath = 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)';
-          break;
-        default: // Irregular polygon
-          const points = [];
-          for (let i = 0; i < 6; i++) {
-            points.push(`${Math.random() * 100}% ${Math.random() * 100}%`);
-          }
-          shape.style.clipPath = `polygon(${points.join(', ')})`;
+      // Create irregular shape using SVG
+      const svgNS = "http://www.w3.org/2000/svg";
+      const svg = document.createElementNS(svgNS, "svg");
+      svg.setAttribute("width", "100%");
+      svg.setAttribute("height", "100%");
+      svg.setAttribute("viewBox", "0 0 100 100");
+      
+      const path = document.createElementNS(svgNS, "path");
+      
+      // Generate random path for cloud-like or swirl-like shape
+      let d = "M50,50 ";
+      const points = 8 + Math.floor(Math.random() * 5); // 8 to 12 points
+      for (let i = 0; i < points; i++) {
+        const angle = (i / points) * Math.PI * 2;
+        const radius = 30 + Math.random() * 20;
+        const x = 50 + Math.cos(angle) * radius;
+        const y = 50 + Math.sin(angle) * radius;
+        const controlX = 50 + Math.cos(angle + 0.5) * (radius * 1.2);
+        const controlY = 50 + Math.sin(angle + 0.5) * (radius * 1.2);
+        d += `Q${controlX},${controlY} ${x},${y} `;
       }
+      d += "Z";
+      
+      path.setAttribute("d", d);
+      path.setAttribute("fill", "currentColor");
+      svg.appendChild(path);
+      
+      shape.appendChild(svg);
       
       // Random animation duration
       shape.style.animationDuration = `${Math.random() * 5 + 5}s, ${Math.random() * 10 + 10}s, ${Math.random() * 15 + 15}s`;
