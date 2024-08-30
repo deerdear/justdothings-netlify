@@ -98,10 +98,10 @@
 }
 
 @keyframes floatParticle {
-  0% {
+  0%, 100% {
     transform: translate(0, 0);
   }
-  100% {
+  50% {
     transform: translate(var(--end-x), var(--end-y));
   }
 }
@@ -119,11 +119,11 @@
 
 .particle {
   position: absolute;
-  width: 2px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.7);
+  width: 3px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
-  animation: floatParticle var(--duration) infinite alternate ease-in-out;
+  animation: floatParticle var(--duration) infinite ease-in-out;
 }
 
 /* Custom scrollbar for retro feel */

@@ -15,21 +15,16 @@ const Index = () => {
       particle.style.top = `${startY}px`;
       
       // Random end position (wind-like movement)
-      const endX = startX + (Math.random() - 0.5) * 200;
-      const endY = startY - Math.random() * 100;
-      particle.style.setProperty('--end-x', `${endX - startX}px`);
-      particle.style.setProperty('--end-y', `${endY - startY}px`);
-      
-      // Random size
-      const size = Math.random() * 2 + 1;
-      particle.style.width = `${size}px`;
-      particle.style.height = `${size}px`;
+      const endX = (Math.random() - 0.5) * 100;
+      const endY = (Math.random() - 0.5) * 100;
+      particle.style.setProperty('--end-x', `${endX}px`);
+      particle.style.setProperty('--end-y', `${endY}px`);
       
       // Random opacity
       particle.style.opacity = Math.random() * 0.5 + 0.3;
       
       // Random animation duration
-      const duration = Math.random() * 3 + 2;
+      const duration = Math.random() * 10 + 5;
       particle.style.setProperty('--duration', `${duration}s`);
       
       return particle;
@@ -38,16 +33,18 @@ const Index = () => {
     const animateParticles = () => {
       if (particleContainerRef.current) {
         particleContainerRef.current.innerHTML = '';
-        for (let i = 0; i < 100; i++) {
+        for (let i = 0; i < 150; i++) {
           particleContainerRef.current.appendChild(createParticle());
         }
       }
     };
 
     animateParticles();
-    const intervalId = setInterval(animateParticles, 5000);
+    window.addEventListener('resize', animateParticles);
 
-    return () => clearInterval(intervalId);
+    return () => {
+      window.removeEventListener('resize', animateParticles);
+    };
   }, []);
 
   return (
