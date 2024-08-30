@@ -1,41 +1,58 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Index = () => {
-  React.useEffect(() => {
+  const particleContainerRef = useRef(null);
+
+  useEffect(() => {
     const createParticle = () => {
       const particle = document.createElement('div');
       particle.classList.add('particle');
       
-      // Random position
-      particle.style.left = `${Math.random() * 100}vw`;
-      particle.style.top = `${Math.random() * 100}vh`;
+      // Random start position
+      const startX = Math.random() * window.innerWidth;
+      const startY = Math.random() * window.innerHeight;
+      particle.style.left = `${startX}px`;
+      particle.style.top = `${startY}px`;
       
-      // Random size (smaller than before)
-      const size = Math.random() * 3 + 2;
+      // Random end position (wind-like movement)
+      const endX = startX + (Math.random() - 0.5) * 200;
+      const endY = startY - Math.random() * 100;
+      particle.style.setProperty('--end-x', `${endX - startX}px`);
+      particle.style.setProperty('--end-y', `${endY - startY}px`);
+      
+      // Random size
+      const size = Math.random() * 2 + 1;
       particle.style.width = `${size}px`;
       particle.style.height = `${size}px`;
       
       // Random opacity
-      particle.style.opacity = Math.random() * 0.5 + 0.1;
+      particle.style.opacity = Math.random() * 0.5 + 0.3;
       
-      // Random animation duration and delay
-      const duration = Math.random() * 15 + 10;
-      const delay = Math.random() * -20;
-      particle.style.animationDuration = `${duration}s`;
-      particle.style.animationDelay = `${delay}s`;
+      // Random animation duration
+      const duration = Math.random() * 3 + 2;
+      particle.style.setProperty('--duration', `${duration}s`);
       
-      document.querySelector('.particle-bg').appendChild(particle);
+      return particle;
     };
 
-    // Create more particles
-    for (let i = 0; i < 100; i++) {
-      createParticle();
-    }
+    const animateParticles = () => {
+      if (particleContainerRef.current) {
+        particleContainerRef.current.innerHTML = '';
+        for (let i = 0; i < 100; i++) {
+          particleContainerRef.current.appendChild(createParticle());
+        }
+      }
+    };
+
+    animateParticles();
+    const intervalId = setInterval(animateParticles, 5000);
+
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
     <div className="min-h-screen font-mono relative overflow-hidden">
-      <div className="particle-bg"></div>
+      <div ref={particleContainerRef} className="particle-bg"></div>
       <div className="relative z-10 p-8">
         <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
           <header className="mb-12">
