@@ -96,8 +96,8 @@ const Index = () => {
       <div className="relative z-10 p-8">
         <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
           <header className="mb-12">
-            <h1 className="text-4xl font-bold mb-4 tracking-tight text-gray-800">John Doe</h1>
-            <p className="text-base tracking-wide text-gray-700">Software Developer | Retro Enthusiast</p>
+            <h1 className="text-4xl font-bold mb-4 tracking-tight text-gray-800">Jonatan Luther-Bergquist</h1>
+            <p className="text-base tracking-wide text-gray-700">investing at inflection | engineering physicist | father | husband</p>
           </header>
           
           <nav className="mb-12">
