@@ -3,13 +3,13 @@ import React, { useEffect, useRef } from 'react';
 const JellyfishShape = ({ color }) => {
   const style = {
     position: 'absolute',
-    width: '100px',
-    height: '100px',
+    width: '150px',
+    height: '150px',
     borderRadius: '50%',
     background: color,
-    filter: 'blur(50px)',
-    opacity: 0.5,
-    animation: `float ${Math.random() * 10 + 20}s infinite ease-in-out`,
+    filter: 'blur(30px)',
+    opacity: 0.6,
+    animation: `float ${Math.random() * 20 + 30}s infinite ease-in-out`,
     left: `${Math.random() * 100}vw`,
     top: `${Math.random() * 100}vh`,
   };
@@ -76,12 +76,12 @@ const Index = () => {
   }, []);
 
   const jellyfishColors = [
-    'rgba(255, 0, 0, 0.3)',
-    'rgba(0, 255, 0, 0.3)',
-    'rgba(0, 0, 255, 0.3)',
-    'rgba(255, 255, 0, 0.3)',
-    'rgba(255, 0, 255, 0.3)',
-    'rgba(0, 255, 255, 0.3)',
+    'rgba(255, 0, 0, 0.4)',
+    'rgba(0, 255, 0, 0.4)',
+    'rgba(0, 0, 255, 0.4)',
+    'rgba(255, 255, 0, 0.4)',
+    'rgba(255, 0, 255, 0.4)',
+    'rgba(0, 255, 255, 0.4)',
   ];
 
   return (
@@ -111,7 +111,7 @@ const Index = () => {
           <main className="space-y-12">
             <section id="about">
               <h2 className="text-2xl font-bold mb-4 tracking-tight text-gray-800">About Me</h2>
-              <p className="text-base leading-relaxed tracking-wide text-gray-700">Hello, I'm John Doerr. I love creating retro-style websites and applications.</p>
+              <p className="text-base leading-relaxed tracking-wide text-gray-700">Hello, I'm John Doe. I love creating retro-style websites and applications.</p>
             </section>
             
             <section id="projects">
