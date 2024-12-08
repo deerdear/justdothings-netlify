@@ -12,18 +12,18 @@ export const navItems = [
     page: <Index />,
   },
   {
-    title: "Essay One",
+    title: "Address to Machine Offensive 2.0",
     to: "/essays/one",
     page: <EssayOne />,
-  },
-  {
-    title: "Essay Two",
-    to: "/essays/two",
-    page: <EssayTwo />,
-  },
-  {
-    title: "Essay Three",
-    to: "/essays/three",
-    page: <EssayThree />,
-  },
+  }
+  // {
+  //   title: "Essay Two",
+  //   to: "/essays/two",
+  //   page: <EssayTwo />,
+  // },
+  // {
+  //   title: "Essay Three",
+  //   to: "/essays/three",
+  //   page: <EssayThree />,
+  // },
 ];
