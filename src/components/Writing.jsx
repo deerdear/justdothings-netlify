@@ -9,6 +9,9 @@ const Writing = () => {
         <li>
           <Link to="/essays/one" className="hover:text-blue-600 transition-colors">► Address to Machine Offensive 2.0</Link>
         </li>
+        <li>
+          <Link to="https://svrgn.substack.com" className="hover:text-blue-600 transition-colors">► SVRGN substack where I post Digests weekly</Link>
+        </li>
         {/* <li>
           <Link to="/essays/two" className="hover:text-blue-600 transition-colors">► Essay Two</Link>
         </li>
