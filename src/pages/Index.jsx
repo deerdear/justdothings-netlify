@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <div className="min-h-screen font-mono relative overflow-hidden">
       <div className="relative z-10 p-8">
-        <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
+        <div className="max-w-4xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
           <Header />
           <Navigation />
           <main className="space-y-12">
