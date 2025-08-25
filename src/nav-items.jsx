@@ -15,7 +15,7 @@ export const navItems = [
     title: "Address to Machine Offensive 2.0",
     to: "/essays/one",
     page: <EssayOne />,
-  }
+  },
   // {
   //   title: "Essay Two",
   //   to: "/essays/two",
