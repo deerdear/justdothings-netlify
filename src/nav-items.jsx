@@ -1,8 +1,9 @@
 import { HomeIcon } from "lucide-react";
-import Index from "./pages/Index.jsx";
-import EssayOne from "./pages/essays/EssayOne.jsx";
-import EssayTwo from "./pages/essays/EssayTwo.jsx";
-import EssayThree from "./pages/essays/EssayThree.jsx";
+import { lazy } from "react";
+const Index = lazy(() => import("./pages/Index.jsx"));
+const EssayOne = lazy(() => import("./pages/essays/EssayOne.jsx"));
+const EssayTwo = lazy(() => import("./pages/essays/EssayTwo.jsx"));
+const EssayThree = lazy(() => import("./pages/essays/EssayThree.jsx"));
 
 export const navItems = [
   {
