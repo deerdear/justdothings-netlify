@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import About from '../components/About';
 import Writing from '../components/Writing';
+import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -16,6 +17,7 @@ const Index = () => {
           <main className="space-y-12">
             <About />
             <Writing />
+            <Projects />
             <Contact />
           </main>
           <Footer />
