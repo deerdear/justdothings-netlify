@@ -12,7 +12,7 @@ const EssayOne = () => {
             <p>By Jonatan Luther-Bergquist</p>
             <p>February 15, 2024</p>
           </div>
-          
+
           <p className="text-gray-700 leading-relaxed mb-4">
             I wish I could be with you in person today to share the excitement and see the initial results of your hard work. I will not take away too much of your precious hacking time.
           </p>
