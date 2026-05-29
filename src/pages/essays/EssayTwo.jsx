@@ -68,4 +68,4 @@ const EssayTwo = () => {
   );
 };
 
-export default EssayOne;
+export default EssayTwo;

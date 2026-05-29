@@ -15,6 +15,15 @@ const Writing = () => {
         <li>
           <Link to="https://svrgn.substack.com" className="hover:text-blue-600 transition-colors">► SVRGN substack where I post Digests weekly</Link>
         </li>
+        <li>
+          <Link to="/essays/observations-from-earth" className="hover:text-blue-600 transition-colors">► Observations from Earth</Link>
+        </li>
+        <li>
+          <Link to="/essays/radical-aero" className="hover:text-blue-600 transition-colors">► Radical Aero</Link>
+        </li>
+        <li>
+          <Link to="/essays/when-leo-fails" className="hover:text-blue-600 transition-colors">► When LEO Fails</Link>
+        </li>
         {/* <li>
           <Link to="/essays/two" className="hover:text-blue-600 transition-colors">► Essay Two</Link>
         </li>
