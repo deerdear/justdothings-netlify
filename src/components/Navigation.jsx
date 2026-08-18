@@ -7,6 +7,7 @@ const Navigation = () => {
         <li><a href="#about" className="hover:text-blue-600 transition-colors text-gray-700">About</a></li>
         <li><a href="#writing" className="hover:text-blue-600 transition-colors text-gray-700">Writing</a></li>
         <li><a href="#projects" className="hover:text-blue-600 transition-colors text-gray-700">Projects</a></li>
+        <li><a href="#reading" className="hover:text-blue-600 transition-colors text-gray-700">Reading</a></li>
         <li><a href="#contact" className="hover:text-blue-600 transition-colors text-gray-700">Contact</a></li>
       </ul>
     </nav>

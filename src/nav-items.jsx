@@ -1,11 +1,12 @@
 import { HomeIcon } from "lucide-react";
-import { lazy } from "react";
+import { createElement, lazy } from "react";
 const Index = lazy(() => import("./pages/Index.jsx"));
 const EssayOne = lazy(() => import("./pages/essays/EssayOne.jsx"));
 const EssayTwo = lazy(() => import("./pages/essays/EssayTwo.jsx"));
 const ObservationsFromEarth = lazy(() => import("./pages/essays/ObservationsFromEarth.jsx"));
 const RadicalAero = lazy(() => import("./pages/essays/RadicalAero.jsx"));
 const WhenLeoFails = lazy(() => import("./pages/essays/WhenLeoFails.jsx"));
+const Reading = lazy(() => import("./pages/Reading.jsx"));
 
 export const navItems = [
   {
@@ -39,4 +40,20 @@ export const navItems = [
     to: "/essays/when-leo-fails",
     page: <WhenLeoFails />,
   },
+  {
+    title: "Reading",
+    to: "/reading",
+    page: <Reading />,
+  },
+  // Annotation tool — needs the dev server's /__books endpoints. The import
+  // sits inside the branch so the whole page drops out of a production build.
+  ...(import.meta.env.DEV
+    ? [
+        {
+          title: "Reading review",
+          to: "/reading/review",
+          page: createElement(lazy(() => import("./pages/ReadingReview.jsx"))),
+        },
+      ]
+    : []),
 ];
