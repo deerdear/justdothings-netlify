@@ -7,6 +7,7 @@ const ObservationsFromEarth = lazy(() => import("./pages/essays/ObservationsFrom
 const RadicalAero = lazy(() => import("./pages/essays/RadicalAero.jsx"));
 const WhenLeoFails = lazy(() => import("./pages/essays/WhenLeoFails.jsx"));
 const Reading = lazy(() => import("./pages/Reading.jsx"));
+const Digest = lazy(() => import("./pages/Digest.jsx"));
 
 export const navItems = [
   {
@@ -44,6 +45,11 @@ export const navItems = [
     title: "Reading",
     to: "/reading",
     page: <Reading />,
+  },
+  {
+    title: "Digest",
+    to: "/digest",
+    page: <Digest />,
   },
   // Annotation tool — needs the dev server's /__books endpoints. The import
   // sits inside the branch so the whole page drops out of a production build.

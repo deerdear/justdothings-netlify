@@ -9,8 +9,9 @@ const ESSAYS = [
   { to: '/essays/two', title: 'European Fellowship', date: '2025-02-08' },
   { to: '/essays/radical-aero', title: 'Radical Aero', date: '2024-04-24' },
   { to: '/essays/one', title: 'Address to Machine Offensive 2.0', date: '2024-02-15' },
-  // Still being added to, so it has no single date and sits above the archive.
+  // Still being added to, so these have no single date and sit above the archive.
   { href: 'https://svrgn.substack.com', title: 'SVRGN', note: 'Digests', date: null },
+  { to: '/digest', title: 'Digest', note: 'linked reads', date: null },
 ];
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
