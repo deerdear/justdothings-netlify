@@ -14,6 +14,11 @@ const Entry = ({ book }) => {
       <span className="text-[1.1rem] text-ink transition-colors group-hover:text-oxblood">
         {book.title}
       </span>
+      {book.highlight && (
+        <span className="ml-1 select-none text-oxblood" title="Especially good">
+          *
+        </span>
+      )}
       <span className="ml-2 text-[0.95rem] italic text-ink-faint">
         {book.author}
       </span>

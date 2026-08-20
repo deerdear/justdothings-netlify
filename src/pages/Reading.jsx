@@ -24,6 +24,11 @@ const Book = ({ book }) => (
     <summary className="flex cursor-pointer list-none items-baseline justify-between gap-4 py-[0.45rem] text-[1.08rem] leading-snug text-ink transition-colors hover:text-oxblood [&::-webkit-details-marker]:hidden">
       <span className="min-w-0">
         {book.title}
+        {book.highlight && (
+          <span className="ml-1 select-none text-oxblood" title="Especially good">
+            *
+          </span>
+        )}
         <span className="ml-2 text-[0.95rem] italic text-ink-faint">
           {book.author}
         </span>
@@ -94,7 +99,8 @@ const Reading = () => {
         <hr className="rule mt-8 w-16" />
         <p className="mt-6 text-[1.05rem] leading-relaxed text-ink-soft">
           {books.length} books, newest first. Open one for what it is and what
-          I thought.
+          I thought. A red <span className="text-oxblood">*</span> marks the
+          especially good ones.
         </p>
       </header>
 

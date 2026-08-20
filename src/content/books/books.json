@@ -884,7 +884,8 @@
     "series": "",
     "blurb": "A man wakes alone on a starship with amnesia, tasked with saving the Sun — and finds company.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "The Martian",
@@ -1137,7 +1138,8 @@
     "series": "",
     "blurb": "Charlie Gordon's progress reports track his surgically raised intelligence and its loss.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Change Agent",
@@ -1716,7 +1718,8 @@
     "series": "",
     "blurb": "Five essays on tennis, including Federer as religious experience and his own junior career in Midwest crosswinds.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "The Pale King",
@@ -1843,7 +1846,8 @@
     "series": "",
     "blurb": "An American dynamiter with Republican guerrillas has three days to blow a bridge in the Spanish Civil War.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Reward System",
@@ -2016,7 +2020,8 @@
     "series": "",
     "blurb": "Churchill's first year in office and the Blitz, told through diaries and family life.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Red Plenty",
@@ -2171,7 +2176,8 @@
     "series": "",
     "blurb": "Why megaprojects blow up, and the fixes: think slow act fast, modularity, reference-class forecasting.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Range",
@@ -2301,7 +2307,8 @@
     "series": "",
     "blurb": "We moved from a disciplinary society to an achievement society, where we exploit ourselves willingly.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "This Is Water",
@@ -2599,7 +2606,8 @@
     "series": "",
     "blurb": "Han argues that a culture of relentless self-optimisation has erased the Other, and with it the possibility of eros, leaving only narcissism and depression.",
     "uncertain": false,
-    "reviewed": false
+    "reviewed": false,
+    "highlight": true
   },
   {
     "title": "The Structure of Scientific Revolutions",
