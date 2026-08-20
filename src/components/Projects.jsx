@@ -2,6 +2,12 @@ import Section from './Section';
 
 const PROJECTS = [
   {
+    href: 'https://patterns.justdothings.xyz/',
+    title: 'Pattern Atlas',
+    note: 'A Pattern Language, explorable',
+    stamp: '',
+  },
+  {
     href: 'https://copper.justdothings.xyz/',
     title: 'Copper',
     note: 'investment analyzer',
