@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import allBooks from '../content/books/books.json';
-import { themeLabel } from '../content/books/themes';
+import { THEMES, themeLabel } from '../content/books/themes';
 import Page from '../components/Page';
 
 // Titles marked "didn't actually read" during review stay in the file but
@@ -95,8 +96,28 @@ const groupByYear = (entries) => {
   });
 };
 
+// "All" plus one entry per theme, in the shared THEMES order.
+const FilterRow = ({ active, onPick }) => (
+  <nav className="flex flex-wrap gap-x-5 gap-y-2">
+    {[[null, 'All'], ...THEMES].map(([key, label]) => (
+      <button
+        key={key ?? 'all'}
+        type="button"
+        onClick={() => onPick(key)}
+        className={`label transition-colors hover:text-oxblood ${
+          active === key ? 'text-oxblood' : ''
+        }`}
+      >
+        {label}
+      </button>
+    ))}
+  </nav>
+);
+
 const Reading = () => {
-  const years = groupByYear(books);
+  const [theme, setTheme] = useState(null);
+  const shown = theme ? books.filter((book) => book.theme === theme) : books;
+  const years = groupByYear(shown);
 
   return (
     <Page>
@@ -110,6 +131,14 @@ const Reading = () => {
           I thought. A red <span className="text-oxblood">*</span> marks the
           especially good ones.
         </p>
+        <div className="mt-8">
+          <FilterRow active={theme} onPick={setTheme} />
+        </div>
+        {theme && (
+          <p className="mt-4 text-[0.95rem] italic text-ink-faint">
+            {shown.length} in {themeLabel(theme)}
+          </p>
+        )}
       </header>
 
       {years.map(([year, yearBooks], i) => (
