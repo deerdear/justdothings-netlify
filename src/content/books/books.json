@@ -4025,7 +4025,8 @@
     "author": "J.R.R. Tolkien",
     "borrowed": "1900-01-01",
     "unfinished": false,
-    "theme": "fantasy"
+    "theme": "fantasy",
+    "highlight": true
   },
   {
     "title": "The Subtle Knife",
