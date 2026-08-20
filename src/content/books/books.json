@@ -2636,5 +2636,27 @@
     "blurb": "Each technological revolution runs the same arc — installation, a financial bubble, a crash, then deployment — a roughly fifty-year rhythm from canals to microchips.",
     "uncertain": false,
     "reviewed": false
+  },
+  {
+    "title": "Assassin's Quest",
+    "author": "Robin Hobb",
+    "borrowed": "2024-01-11",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Farseer Trilogy #3"
+  },
+  {
+    "title": "Insanely Simple",
+    "author": "Ken Segall",
+    "borrowed": "2024-01-11",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "borrowed": "2024-01-01",
+    "unfinished": false,
+    "theme": "literary"
   }
 ]
