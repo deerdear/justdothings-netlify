@@ -1,6 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import allBooks from '../content/books/books.json';
+import Section from './Section';
 
 // books.json is in review order, so sort before slicing — otherwise "recent"
 // is just whichever five happen to sit at the top of the file.
@@ -8,33 +8,48 @@ const books = [...allBooks]
   .filter((book) => !book.removed)
   .sort((a, b) => b.borrowed.localeCompare(a.borrowed));
 
+const Entry = ({ book }) => {
+  const label = (
+    <>
+      <span className="text-[1.1rem] text-ink transition-colors group-hover:text-oxblood">
+        {book.title}
+      </span>
+      <span className="ml-2 text-[0.95rem] italic text-ink-faint">
+        {book.author}
+      </span>
+    </>
+  );
+
+  if (!book.url) return label;
+
+  return (
+    <a href={book.url} target="_blank" rel="noopener noreferrer">
+      {label}
+    </a>
+  );
+};
+
 const Reading = () => {
   const recent = books.slice(0, 5);
 
   return (
-    <section id="reading">
-      <h2 className="text-2xl font-bold mb-4 tracking-tight text-gray-800">Reading</h2>
-      <ul className="text-base space-y-2 tracking-wide text-gray-700">
+    <Section id="reading" title="Reading" delay={320}>
+      <ul className="space-y-[0.3rem]">
         {recent.map((book) => (
-          <li key={book.url}>
-            <a
-              href={book.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-600 transition-colors"
-            >
-              ► {book.title}
-            </a>
-            <span className="text-sm text-gray-500"> — {book.author}</span>
+          <li key={`${book.title}|${book.author}`} className="group">
+            {/* Books read outside Libby have no link, so they render as text. */}
+            <Entry book={book} />
           </li>
         ))}
-        <li>
-          <Link to="/reading" className="hover:text-blue-600 transition-colors">
-            ► All {books.length} books
-          </Link>
-        </li>
       </ul>
-    </section>
+
+      <Link
+        to="/reading"
+        className="label mt-5 inline-block transition-colors hover:text-oxblood"
+      >
+        All {books.length} books →
+      </Link>
+    </Section>
   );
 };
 

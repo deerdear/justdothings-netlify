@@ -1,7 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import allBooks from '../content/books/books.json';
 import { themeLabel } from '../content/books/themes';
+import Page from '../components/Page';
 
 // Titles marked "didn't actually read" during review stay in the file but
 // never reach the page.
@@ -11,37 +10,66 @@ const books = [...allBooks]
   // trusting the file to already be newest-first.
   .sort((a, b) => b.borrowed.localeCompare(a.borrowed));
 
+// Not every book has a Libby URL, so identity is title + author.
+const bookKey = (book) => `${book.title}|${book.author}`;
+
+/**
+ * Collapsed, the list reads as an index of titles. Opening one reveals the
+ * detail. Native <details> rather than React state, so keyboard and find-in-
+ * page behaviour come for free — and the title is the toggle, which means the
+ * Libby link moves into the body so each control does one thing.
+ */
 const Book = ({ book }) => (
-  <article className="border-b border-gray-200 pb-4 mb-4 last:border-0">
-    <h3 className="text-base font-bold">
-      <a
-        href={book.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:text-blue-800 hover:underline"
-      >
-        {book.title} →
-      </a>
-    </h3>
-    <div className="text-sm text-gray-500">
-      {book.author} · {book.format}
-      {book.series && <span> · {book.series}</span>}
-      <span> · {themeLabel(book.theme)}</span>
-      {book.unfinished && (
-        <span className="text-gray-400 italic"> · unfinished</span>
+  <details className="group">
+    <summary className="flex cursor-pointer list-none items-baseline justify-between gap-4 py-[0.45rem] text-[1.08rem] leading-snug text-ink transition-colors hover:text-oxblood [&::-webkit-details-marker]:hidden">
+      <span className="min-w-0">
+        {book.title}
+        <span className="ml-2 text-[0.95rem] italic text-ink-faint">
+          {book.author}
+        </span>
+      </span>
+      <span className="shrink-0 select-none text-[0.85rem] text-oxblood/45">
+        <span className="group-open:hidden">+</span>
+        <span className="hidden group-open:inline">−</span>
+      </span>
+    </summary>
+
+    <div className="pb-6 pt-1.5">
+      {/* Author is already on the collapsed row, so it isn't repeated here.
+          Books read outside Libby have no format or link, so the line is
+          assembled from whatever is actually present. */}
+      <p className="text-[0.96rem] text-ink-faint">
+        {[book.format, book.series, themeLabel(book.theme)]
+          .filter(Boolean)
+          .join(' · ')}
+        {book.unfinished && <span className="italic"> · unfinished</span>}
+      </p>
+
+      {book.blurb && (
+        <p className="mt-3 text-[1.02rem] leading-[1.65] text-ink-soft">
+          {book.blurb}
+        </p>
+      )}
+
+      {/* My own take, set off by a red rule the way a marginal note would be. */}
+      {book.note && (
+        <p className="mt-3 border-l-2 border-oxblood/25 pl-4 text-[1.02rem] italic leading-[1.6] text-ink-soft">
+          {book.note}
+        </p>
+      )}
+
+      {book.url && (
+        <a
+          href={book.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="label mt-4 inline-block transition-colors hover:text-oxblood"
+        >
+          Libby ↗
+        </a>
       )}
     </div>
-
-    {book.blurb && (
-      <p className="text-sm text-gray-600 mt-2 max-w-prose">{book.blurb}</p>
-    )}
-
-    {book.note && (
-      <p className="text-sm text-gray-800 mt-2 max-w-prose border-l-2 border-gray-300 pl-3">
-        {book.note}
-      </p>
-    )}
-  </article>
+  </details>
 );
 
 const groupByYear = (entries) => {
@@ -58,35 +86,40 @@ const Reading = () => {
   const years = groupByYear(books);
 
   return (
-    <div className="min-h-screen font-mono relative p-8">
-      <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
-        <Link to="/" className="text-blue-600 hover:text-blue-800 mb-8 block">
-          ← Back to Home
-        </Link>
+    <Page>
+      <header className="rise mb-14">
+        <h1 className="text-[2.6rem] font-medium leading-tight tracking-[-0.015em] text-ink">
+          Reading
+        </h1>
+        <hr className="rule mt-8 w-16" />
+        <p className="mt-6 text-[1.05rem] leading-relaxed text-ink-soft">
+          {books.length} books, newest first. Open one for what it is and what
+          I thought.
+        </p>
+      </header>
 
-        <header className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">Reading</h1>
-          <p className="text-gray-600">
-            {books.length} books, newest first. Each gets a line on what it is;
-            the indented note is what I thought.
-          </p>
-        </header>
+      {years.map(([year, yearBooks], i) => (
+        <section
+          key={year}
+          className="rise mb-14 last:mb-0"
+          style={{ animationDelay: `${Math.min(i * 70 + 120, 400)}ms` }}
+        >
+          <div className="flex items-baseline justify-between">
+            <h2 className="label">{year}</h2>
+            <span className="text-[0.9rem] tabular-nums text-ink-faint">
+              {yearBooks.length}
+            </span>
+          </div>
+          <hr className="rule mt-2.5" />
 
-        {years.map(([year, yearBooks]) => (
-          <section key={year} className="mb-10 last:mb-0">
-            <h2 className="text-2xl font-bold mb-4 tracking-tight text-gray-800">
-              {year}{' '}
-              <span className="text-base font-normal text-gray-500">
-                ({yearBooks.length})
-              </span>
-            </h2>
+          <div className="divide-y divide-ink-rule/60">
             {yearBooks.map((book) => (
-              <Book key={book.url} book={book} />
+              <Book key={bookKey(book)} book={book} />
             ))}
-          </section>
-        ))}
-      </div>
-    </div>
+          </div>
+        </section>
+      ))}
+    </Page>
   );
 };
 

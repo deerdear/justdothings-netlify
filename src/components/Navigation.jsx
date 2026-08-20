@@ -1,17 +1,25 @@
-import React from 'react';
+const LINKS = [
+  ['#about', 'About'],
+  ['#writing', 'Writing'],
+  ['#projects', 'Projects'],
+  ['#reading', 'Reading'],
+  ['#contact', 'Contact'],
+];
 
-const Navigation = () => {
-  return (
-    <nav className="mb-12">
-      <ul className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6">
-        <li><a href="#about" className="hover:text-blue-600 transition-colors text-gray-700">About</a></li>
-        <li><a href="#writing" className="hover:text-blue-600 transition-colors text-gray-700">Writing</a></li>
-        <li><a href="#projects" className="hover:text-blue-600 transition-colors text-gray-700">Projects</a></li>
-        <li><a href="#reading" className="hover:text-blue-600 transition-colors text-gray-700">Reading</a></li>
-        <li><a href="#contact" className="hover:text-blue-600 transition-colors text-gray-700">Contact</a></li>
-      </ul>
-    </nav>
-  );
-};
+const Navigation = () => (
+  <nav className="rise mb-16" style={{ animationDelay: '80ms' }}>
+    <hr className="rule" />
+    <ul className="flex flex-wrap items-center gap-x-7 gap-y-2 py-3.5">
+      {LINKS.map(([href, label]) => (
+        <li key={href}>
+          <a href={href} className="label transition-colors hover:text-oxblood">
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <hr className="rule" />
+  </nav>
+);
 
 export default Navigation;

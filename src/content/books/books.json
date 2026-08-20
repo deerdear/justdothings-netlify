@@ -2586,5 +2586,47 @@
     "uncertain": false,
     "removed": true,
     "reviewed": true
+  },
+  {
+    "title": "The Agony of Eros",
+    "author": "Byung-Chul Han",
+    "url": "",
+    "format": "",
+    "borrowed": "2026-08-17",
+    "note": "",
+    "unfinished": false,
+    "theme": "ideas",
+    "series": "",
+    "blurb": "Han argues that a culture of relentless self-optimisation has erased the Other, and with it the possibility of eros, leaving only narcissism and depression.",
+    "uncertain": false,
+    "reviewed": false
+  },
+  {
+    "title": "The Structure of Scientific Revolutions",
+    "author": "Thomas S. Kuhn",
+    "url": "",
+    "format": "",
+    "borrowed": "2025",
+    "note": "",
+    "unfinished": false,
+    "theme": "ideas",
+    "series": "",
+    "blurb": "The book that gave us the paradigm shift: science advances not by steady accumulation but by crises in which an old framework collapses and a new one replaces it.",
+    "uncertain": false,
+    "reviewed": false
+  },
+  {
+    "title": "Technological Revolutions and Financial Capital",
+    "author": "Carlota Perez",
+    "url": "",
+    "format": "",
+    "borrowed": "2024",
+    "note": "",
+    "unfinished": false,
+    "theme": "business",
+    "series": "",
+    "blurb": "Each technological revolution runs the same arc — installation, a financial bubble, a crash, then deployment — a roughly fifty-year rhythm from canals to microchips.",
+    "uncertain": false,
+    "reviewed": false
   }
 ]

@@ -115,7 +115,7 @@ const ReadingReview = () => {
 
   if (error && !books) {
     return (
-      <div className="min-h-screen font-mono p-8">
+      <div className="min-h-screen px-6 py-16 sm:px-10 sm:py-24">
         <p className="text-red-700">{error}</p>
         <p className="text-gray-600 mt-2">
           This tool only runs under <code>npm run dev</code>.
@@ -125,7 +125,7 @@ const ReadingReview = () => {
   }
 
   if (!books) {
-    return <div className="min-h-screen font-mono p-8">Loading…</div>;
+    return <div className="min-h-screen px-6 py-16 sm:px-10 sm:py-24">Loading…</div>;
   }
 
   const groupStart =
@@ -134,8 +134,8 @@ const ReadingReview = () => {
     books[index - 1].author !== current.author;
 
   return (
-    <div className="min-h-screen font-mono p-8">
-      <div className="max-w-3xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
+    <div className="min-h-screen px-6 py-16 sm:px-10 sm:py-24">
+      <div className="mx-auto max-w-3xl">
         <div className="flex justify-between items-center mb-6">
           <Link to="/reading" className="text-blue-600 hover:text-blue-800">
             ← Reading

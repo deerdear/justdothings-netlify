@@ -1,13 +1,31 @@
-import React from 'react';
+import Section from './Section';
 
-const Contact = () => {
-  return (
-    <section id="contact">
-      <h2 className="text-2xl font-bold mb-4 tracking-tight text-gray-800">Contact</h2>
-      <p className="text-base tracking-wide text-gray-700">Email: figure it out</p>
-      <p className="text-base tracking-wide text-gray-700">LinkedIn: <a href="https://www.linkedin.com/in/jonatan-h-bergquist/" className="text-blue-600 hover:text-blue-800 transition-colors" target="_blank" rel="noopener noreferrer">jonatan-h-bergquist</a></p>
-    </section>
-  );
-};
+const Contact = () => (
+  <Section id="contact" title="Contact" delay={380}>
+    <dl className="space-y-1.5 text-[1.02rem] text-ink-soft">
+      <div className="flex items-baseline gap-3">
+        <dt className="w-20 shrink-0 text-[0.95rem] italic text-ink-faint">
+          Email
+        </dt>
+        <dd>figure it out</dd>
+      </div>
+      <div className="flex items-baseline gap-3">
+        <dt className="w-20 shrink-0 text-[0.95rem] italic text-ink-faint">
+          LinkedIn
+        </dt>
+        <dd>
+          <a
+            href="https://www.linkedin.com/in/jonatan-h-bergquist/"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            jonatan-h-bergquist
+          </a>
+        </dd>
+      </div>
+    </dl>
+  </Section>
+);
 
 export default Contact;

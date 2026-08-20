@@ -1,88 +1,186 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-    --radius: 0.5rem;
-  }
- 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --paper: 44 46% 96.5%;
+    --paper-deep: 44 42% 92%;
+    --ink: 40 11% 12%;
+    --ink-soft: 40 13% 26%;
+    --ink-faint: 42 10% 46%;
+    --rule: 41 30% 80%;
+    --oxblood: 5 53% 32%;
+
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: var(--paper);
+    --card-foreground: var(--ink);
+    --popover: var(--paper);
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
+    --secondary: var(--paper-deep);
+    --secondary-foreground: var(--ink);
+    --muted: var(--paper-deep);
+    --muted-foreground: var(--ink-faint);
+    --accent: var(--oxblood);
+    --accent-foreground: var(--paper);
+    --destructive: 0 62% 38%;
+    --destructive-foreground: var(--paper);
+    --border: var(--rule);
+    --input: var(--rule);
+    --ring: var(--oxblood);
+    /* Classical pages don't have rounded corners. */
+    --radius: 0rem;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+    font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+    /* Oldstyle figures sit on the baseline like a printed book; standard
+       ligatures and kerning do the rest. */
+    font-feature-settings: "onum" 1, "kern" 1, "liga" 1;
+    font-size: 19px;
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* The sheet: a warm base, a slow tonal wash so the page isn't flat, and a
+     fine grain so it reads as stock rather than a colour swatch. The grain is
+     an inline SVG turbulence, so there's no image request. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+      radial-gradient(
+        ellipse 120% 80% at 50% 0%,
+        hsl(44 54% 98.5%) 0%,
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 100% 70% at 50% 100%,
+        hsl(41 40% 93.5%) 0%,
+        transparent 65%
+      ),
+      hsl(var(--paper));
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.32;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23g)' opacity='0.32'/%3E%3C/svg%3E");
+  }
+
+  ::selection {
+    background: hsl(var(--oxblood) / 0.16);
   }
 }
 
+@layer components {
+  /* Small letterspaced caps — the section marker throughout the site. */
+  .label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+    color: hsl(var(--ink-faint));
+    font-feature-settings: "kern" 1;
+  }
+
+  /* A hairline that stops short of the full measure, like a printer's rule. */
+  .rule {
+    border: 0;
+    border-top: 1px solid hsl(var(--rule));
+  }
+
+  /* Links read as ink on paper until touched, then take the rubricated red.
+     The underline sits low and thin so it doesn't cut the descenders. */
+  .link {
+    color: hsl(var(--oxblood));
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+    text-decoration-color: hsl(var(--oxblood) / 0.35);
+    transition: text-decoration-color 150ms ease, color 150ms ease;
+  }
+
+  .link:hover {
+    color: hsl(var(--oxblood) / 0.78);
+    text-decoration-color: hsl(var(--oxblood) / 0.9);
+  }
+}
+
+/* The old build shipped a Departure Mono terminal look. The face and the
+   `font-mono` class are kept so the six essay pages and the review tool keep
+   rendering, but both now resolve to the serif. */
 @font-face {
-  font-family: 'Departure Mono';
-  src: url('/fonts/DepartureMono-Regular.woff2') format('woff2');
+  font-family: "Departure Mono";
+  src: url("/fonts/DepartureMono-Regular.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
 }
 
 .font-mono {
-  font-family: 'Departure Mono', monospace;
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
 }
 
-/* Custom scrollbar for retro feel */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 11px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: hsl(var(--paper-deep));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00ff00;
-  border: 2px solid #000;
+  background: hsl(var(--rule));
+  border: 3px solid hsl(var(--paper-deep));
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00cc00;
+  background: hsl(var(--ink-faint));
+}
+
+/* One quiet entrance on load, staggered down the page. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.6rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 620ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

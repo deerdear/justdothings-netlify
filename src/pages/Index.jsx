@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import About from '../components/About';
@@ -8,25 +7,21 @@ import Reading from '../components/Reading';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
-const Index = () => {
-  return (
-    <div className="min-h-screen font-mono relative overflow-hidden">
-      <div className="relative z-10 p-8">
-        <div className="max-w-5xl mx-auto bg-white/60 border border-gray-200 rounded-lg shadow-md p-8 backdrop-blur-md">
-          <Header />
-          <Navigation />
-          <main className="space-y-12">
-            <About />
-            <Writing />
-            <Projects />
-            <Reading />
-            <Contact />
-          </main>
-          <Footer />
-        </div>
-      </div>
+const Index = () => (
+  <div className="min-h-screen px-6 py-16 sm:px-10 sm:py-24">
+    <div className="mx-auto max-w-[40rem]">
+      <Header />
+      <Navigation />
+      <main className="space-y-14">
+        <About />
+        <Writing />
+        <Projects />
+        <Reading />
+        <Contact />
+      </main>
+      <Footer />
     </div>
-  );
-};
+  </div>
+);
 
 export default Index;
