@@ -2985,5 +2985,861 @@
     "unfinished": false,
     "theme": "fantasy",
     "series": "Zamonia #1"
+  },
+  {
+    "title": "The Making of a Manager",
+    "author": "Julie Zhuo",
+    "borrowed": "2021-02-18",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "Feet in the Clouds",
+    "author": "Richard Askwith",
+    "borrowed": "2021-02-12",
+    "unfinished": false,
+    "theme": "craft"
+  },
+  {
+    "title": "Conversations with Friends",
+    "author": "Sally Rooney",
+    "borrowed": "2021-01-07",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Tinker, Tailor, Soldier, Spy",
+    "author": "John le Carré",
+    "borrowed": "2021-01-06",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "George Smiley #5"
+  },
+  {
+    "title": "Running the Dream",
+    "author": "Matt Fitzgerald",
+    "borrowed": "2021-01-02",
+    "unfinished": false,
+    "theme": "craft"
+  },
+  {
+    "title": "The Spy Who Came In from the Cold",
+    "author": "John le Carré",
+    "borrowed": "2020-12-20",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "George Smiley #3"
+  },
+  {
+    "title": "A Gentleman in Moscow",
+    "author": "Amor Towles",
+    "borrowed": "2020-12-12",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Year of Magical Thinking",
+    "author": "Joan Didion",
+    "borrowed": "2020-12-04",
+    "unfinished": false,
+    "theme": "memoir"
+  },
+  {
+    "title": "The Glass Hotel",
+    "author": "Emily St. John Mandel",
+    "borrowed": "2020-12-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Wayward Son",
+    "author": "Rainbow Rowell",
+    "borrowed": "2020-11-12",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Simon Snow #2"
+  },
+  {
+    "title": "Carry On",
+    "author": "Rainbow Rowell",
+    "borrowed": "2020-11-05",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Simon Snow #1"
+  },
+  {
+    "title": "Lyra's Oxford",
+    "author": "Philip Pullman",
+    "borrowed": "2020-11-04",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "His Dark Materials #3.5"
+  },
+  {
+    "title": "The Irresistible Inheritance of Wilberforce",
+    "author": "Paul Torday",
+    "borrowed": "2020-11-03",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Der Tod in Venedig",
+    "author": "Thomas Mann",
+    "borrowed": "2020-11-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Bringing Up Bébé",
+    "author": "Pamela Druckerman",
+    "borrowed": "2020-10-26",
+    "unfinished": false,
+    "theme": "craft"
+  },
+  {
+    "title": "The October Man",
+    "author": "Ben Aaronovitch",
+    "borrowed": "2020-10-04",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Rivers of London #7.5"
+  },
+  {
+    "title": "Human Compatible",
+    "author": "Stuart Russell",
+    "borrowed": "2020-08-08",
+    "unfinished": false,
+    "theme": "science"
+  },
+  {
+    "title": "No Longer Human",
+    "author": "Osamu Dazai",
+    "borrowed": "2020-07-30",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Slow Regard of Silent Things",
+    "author": "Patrick Rothfuss",
+    "borrowed": "2020-07-30",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Kingkiller Chronicle #2.5"
+  },
+  {
+    "title": "The Fabric of Reality",
+    "author": "David Deutsch",
+    "borrowed": "2020-07-28",
+    "unfinished": false,
+    "theme": "science"
+  },
+  {
+    "title": "Nomad: From Islam to America",
+    "author": "Ayaan Hirsi Ali",
+    "borrowed": "2020-07-18",
+    "unfinished": false,
+    "theme": "memoir"
+  },
+  {
+    "title": "My Year of Rest and Relaxation",
+    "author": "Ottessa Moshfegh",
+    "borrowed": "2020-07-09",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Family Upstairs",
+    "author": "Lisa Jewell",
+    "borrowed": "2020-06-29",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "The Family Upstairs #1"
+  },
+  {
+    "title": "The Snow Leopard",
+    "author": "Peter Matthiessen",
+    "borrowed": "2020-06-27",
+    "unfinished": false,
+    "theme": "science"
+  },
+  {
+    "title": "The Song of Achilles",
+    "author": "Madeline Miller",
+    "borrowed": "2020-06-13",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The City in the Middle of the Night",
+    "author": "Charlie Jane Anders",
+    "borrowed": "2020-06-10",
+    "unfinished": false,
+    "theme": "scifi"
+  },
+  {
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "borrowed": "2020-06-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Le monde du silence",
+    "author": "Jacques-Yves Cousteau",
+    "borrowed": "2020-05-04",
+    "unfinished": false,
+    "theme": "science"
+  },
+  {
+    "title": "Barbarian Days",
+    "author": "William Finnegan",
+    "borrowed": "2020-04-30",
+    "unfinished": false,
+    "theme": "memoir"
+  },
+  {
+    "title": "Every Man Dies Alone",
+    "author": "Hans Fallada",
+    "borrowed": "2020-04-23",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Hanging Tree",
+    "author": "Ben Aaronovitch",
+    "borrowed": "2020-04-10",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Rivers of London #6"
+  },
+  {
+    "title": "Nomad",
+    "author": "James Swallow",
+    "borrowed": "2020-04-07",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "Marc Dane #1"
+  },
+  {
+    "title": "The Merchant and the Alchemist's Gate",
+    "author": "Ted Chiang",
+    "borrowed": "2020-04-04",
+    "unfinished": false,
+    "theme": "scifi"
+  },
+  {
+    "title": "Mindf*ck",
+    "author": "Christopher Wylie",
+    "borrowed": "2020-04-04",
+    "unfinished": false,
+    "theme": "geopolitics"
+  },
+  {
+    "title": "Dark Days",
+    "author": "James Baldwin",
+    "borrowed": "2020-03-29",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Magic for Liars",
+    "author": "Sarah Gailey",
+    "borrowed": "2020-03-28",
+    "unfinished": false,
+    "theme": "fantasy"
+  },
+  {
+    "title": "The Book of Why",
+    "author": "Judea Pearl",
+    "borrowed": "2020-03-22",
+    "unfinished": false,
+    "theme": "science"
+  },
+  {
+    "title": "The Cuckoo's Egg",
+    "author": "Clifford Stoll",
+    "borrowed": "2020-02-19",
+    "unfinished": false,
+    "theme": "spy"
+  },
+  {
+    "title": "Permanent Record",
+    "author": "Edward Snowden",
+    "borrowed": "2020-02-07",
+    "unfinished": false,
+    "theme": "memoir"
+  },
+  {
+    "title": "Mordet på kommendören: Andra boken",
+    "author": "Haruki Murakami",
+    "borrowed": "2020-01-25",
+    "unfinished": false,
+    "theme": "literary",
+    "series": "Mordet på kommendören #2"
+  },
+  {
+    "title": "De polyglotta älskarna",
+    "author": "Lina Wolff",
+    "borrowed": "2020-01-11",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Secret Commonwealth",
+    "author": "Philip Pullman",
+    "borrowed": "2020-01-04",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Book of Dust #2"
+  },
+  {
+    "title": "Once Upon a Time in the North",
+    "author": "Philip Pullman",
+    "borrowed": "2020-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "His Dark Materials #0.5"
+  },
+  {
+    "title": "Lies Sleeping",
+    "author": "Ben Aaronovitch",
+    "borrowed": "2020-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Rivers of London #7"
+  },
+  {
+    "title": "Killing Commendatore",
+    "author": "Haruki Murakami",
+    "borrowed": "2019-12-30",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Kill Switch",
+    "author": "William Hertling",
+    "borrowed": "2019-12-26",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Kill Chain #2"
+  },
+  {
+    "title": "War! What Is It Good For?",
+    "author": "Ian Morris",
+    "borrowed": "2019-12-18",
+    "unfinished": false,
+    "theme": "history"
+  },
+  {
+    "title": "The Wise Man's Fear",
+    "author": "Patrick Rothfuss",
+    "borrowed": "2019-10-15",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Kingkiller Chronicle #2"
+  },
+  {
+    "title": "Good Omens",
+    "author": "Terry Pratchett, Neil Gaiman",
+    "borrowed": "2019-09-14",
+    "unfinished": false,
+    "theme": "fantasy"
+  },
+  {
+    "title": "Why Nations Fail",
+    "author": "Daron Acemoğlu",
+    "borrowed": "2019-09-07",
+    "unfinished": false,
+    "theme": "geopolitics"
+  },
+  {
+    "title": "Waking Gods",
+    "author": "Sylvain Neuvel",
+    "borrowed": "2019-08-06",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Themis Files #2"
+  },
+  {
+    "title": "Sleeping Giants",
+    "author": "Sylvain Neuvel",
+    "borrowed": "2019-08-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Themis Files #1"
+  },
+  {
+    "title": "The Winter of the Witch",
+    "author": "Katherine Arden",
+    "borrowed": "2019-08-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Winternight Trilogy #3"
+  },
+  {
+    "title": "The Line of Beauty",
+    "author": "Alan Hollinghurst",
+    "borrowed": "2019-07-18",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Le Grand Meaulnes",
+    "author": "Alain-Fournier",
+    "borrowed": "2019-07-14",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Quantum Thief",
+    "author": "Hannu Rajaniemi",
+    "borrowed": "2019-06-21",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Jean le Flambeur #1"
+  },
+  {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "borrowed": "2019-06-16",
+    "unfinished": false,
+    "theme": "craft"
+  },
+  {
+    "title": "The Girl in the Tower",
+    "author": "Katherine Arden",
+    "borrowed": "2019-06-07",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Winternight Trilogy #2"
+  },
+  {
+    "title": "Det osynliga barnet",
+    "author": "Tove Jansson",
+    "borrowed": "2019-05-30",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Mumintrollen #7"
+  },
+  {
+    "title": "Lincoln in the Bardo",
+    "author": "George Saunders",
+    "borrowed": "2019-05-24",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "La Belle Sauvage",
+    "author": "Philip Pullman",
+    "borrowed": "2019-05-15",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Book of Dust #1"
+  },
+  {
+    "title": "The Name of the Wind",
+    "author": "Patrick Rothfuss",
+    "borrowed": "2019-05-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Kingkiller Chronicle #1"
+  },
+  {
+    "title": "Against the Gods",
+    "author": "Peter L. Bernstein",
+    "borrowed": "2019-04-22",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "The Book of M",
+    "author": "Peng Shepherd",
+    "borrowed": "2019-03-30",
+    "unfinished": false,
+    "theme": "scifi"
+  },
+  {
+    "title": "Turing's Cathedral",
+    "author": "George Dyson",
+    "borrowed": "2019-03-23",
+    "unfinished": false,
+    "theme": "science"
+  },
+  {
+    "title": "Fooled by Randomness",
+    "author": "Nassim Nicholas Taleb",
+    "borrowed": "2019-03-05",
+    "unfinished": false,
+    "theme": "ideas"
+  },
+  {
+    "title": "A Discovery of Witches",
+    "author": "Deborah Harkness",
+    "borrowed": "2019-02-25",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "All Souls #1"
+  },
+  {
+    "title": "The Billion Dollar Spy",
+    "author": "David E. Hoffman",
+    "borrowed": "2019-02-12",
+    "unfinished": false,
+    "theme": "spy"
+  },
+  {
+    "title": "Measure What Matters",
+    "author": "John Doerr",
+    "borrowed": "2019-02-10",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "The Terrors of Ice and Darkness",
+    "author": "Christoph Ransmayr",
+    "borrowed": "2019-01-31",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Infinity Welcomes Careful Drivers",
+    "author": "Grant Naylor",
+    "borrowed": "2019-01-15",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Red Dwarf #1"
+  },
+  {
+    "title": "The Power",
+    "author": "Naomi Alderman",
+    "borrowed": "2019-01-13",
+    "unfinished": false,
+    "theme": "scifi"
+  },
+  {
+    "title": "A Political History of the World",
+    "author": "Jonathan Holslag",
+    "borrowed": "2019-01-12",
+    "unfinished": false,
+    "theme": "history"
+  },
+  {
+    "title": "The Kremlin's Candidate",
+    "author": "Jason Matthews",
+    "borrowed": "2019-01-01",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "Red Sparrow Trilogy #3"
+  },
+  {
+    "title": "If on a Winter's Night a Traveler",
+    "author": "Italo Calvino",
+    "borrowed": "2018-12-17",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "How to Bake Pi",
+    "author": "Eugenia Cheng",
+    "borrowed": "2018-11-18",
+    "unfinished": false,
+    "theme": "science"
+  },
+  {
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "borrowed": "2018-11-14",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Crying of Lot 49",
+    "author": "Thomas Pynchon",
+    "borrowed": "2018-09-02",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "All the Birds in the Sky",
+    "author": "Charlie Jane Anders",
+    "borrowed": "2018-08-26",
+    "unfinished": false,
+    "theme": "scifi"
+  },
+  {
+    "title": "Mr. Churchill's Secretary",
+    "author": "Susan Elia MacNeal",
+    "borrowed": "2018-08-22",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "Maggie Hope Mystery #1"
+  },
+  {
+    "title": "The Wealth of Humans",
+    "author": "Ryan Avent",
+    "borrowed": "2018-08-19",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "Sleeping Late on Judgement Day",
+    "author": "Tad Williams",
+    "borrowed": "2018-08-04",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Bobby Dollar #3"
+  },
+  {
+    "title": "The Waste Lands",
+    "author": "Stephen King",
+    "borrowed": "2018-07-03",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Dark Tower #3"
+  },
+  {
+    "title": "The Code of Trust",
+    "author": "Robin Dreeke",
+    "borrowed": "2018-06-27",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "Antifragile",
+    "author": "Nassim Nicholas Taleb",
+    "borrowed": "2018-06-24",
+    "unfinished": false,
+    "theme": "ideas"
+  },
+  {
+    "title": "Broken Angels",
+    "author": "Richard K. Morgan",
+    "borrowed": "2018-06-18",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Takeshi Kovacs #2"
+  },
+  {
+    "title": "A Higher Loyalty",
+    "author": "James B. Comey",
+    "borrowed": "2018-06-01",
+    "unfinished": false,
+    "theme": "memoir"
+  },
+  {
+    "title": "Death's End",
+    "author": "Cixin Liu",
+    "borrowed": "2018-05-16",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Remembrance of Earth's Past #3"
+  },
+  {
+    "title": "Altered Carbon",
+    "author": "Richard K. Morgan",
+    "borrowed": "2018-04-30",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Takeshi Kovacs #1"
+  },
+  {
+    "title": "The Dark Forest",
+    "author": "Cixin Liu",
+    "borrowed": "2018-04-29",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Remembrance of Earth's Past #2"
+  },
+  {
+    "title": "Call Me by Your Name",
+    "author": "André Aciman",
+    "borrowed": "2018-04-15",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Trinity Six",
+    "author": "Charles Cumming",
+    "borrowed": "2018-04-01",
+    "unfinished": false,
+    "theme": "spy"
+  },
+  {
+    "title": "The Golem and the Jinni",
+    "author": "Helene Wecker",
+    "borrowed": "2018-02-16",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Golem and the Jinni #1"
+  },
+  {
+    "title": "The Three-Body Problem",
+    "author": "Cixin Liu",
+    "borrowed": "2018-02-07",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Remembrance of Earth's Past #1"
+  },
+  {
+    "title": "Palace of Treason",
+    "author": "Jason Matthews",
+    "borrowed": "2018-01-10",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "Red Sparrow Trilogy #2"
+  },
+  {
+    "title": "Red Sparrow",
+    "author": "Jason Matthews",
+    "borrowed": "2018-01-05",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "Red Sparrow Trilogy #1"
+  },
+  {
+    "title": "The Unbearable Lightness of Being",
+    "author": "Milan Kundera",
+    "borrowed": "2018-01-02",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Happy Hour in Hell",
+    "author": "Tad Williams",
+    "borrowed": "2018-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Bobby Dollar #2"
+  },
+  {
+    "title": "The Bear and the Nightingale",
+    "author": "Katherine Arden",
+    "borrowed": "2018-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Winternight Trilogy #1"
+  },
+  {
+    "title": "Alif the Unseen",
+    "author": "G. Willow Wilson",
+    "borrowed": "2017-12-22",
+    "unfinished": false,
+    "theme": "fantasy"
+  },
+  {
+    "title": "The DAO of Capital",
+    "author": "Mark Spitznagel",
+    "borrowed": "2017-09-25",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "Negotiating the Impossible",
+    "author": "Deepak Malhotra",
+    "borrowed": "2017-09-25",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "borrowed": "2017-08-29",
+    "unfinished": false,
+    "theme": "history"
+  },
+  {
+    "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
+    "author": "Haruki Murakami",
+    "borrowed": "2015-12-29",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Ender's Shadow",
+    "author": "Orson Scott Card",
+    "borrowed": "2014-04-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "The Shadow Series #1"
+  },
+  {
+    "title": "Ender's Game",
+    "author": "Orson Scott Card",
+    "borrowed": "2014-03-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Ender's Saga #1"
+  },
+  {
+    "title": "Post Office",
+    "author": "Charles Bukowski",
+    "borrowed": "2014-02-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Hateship, Friendship, Courtship, Loveship, Marriage",
+    "author": "Alice Munro",
+    "borrowed": "2013-12-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "borrowed": "2001-10-03",
+    "unfinished": false,
+    "theme": "fantasy"
+  },
+  {
+    "title": "The Art of The Fellowship of the Ring",
+    "author": "Gary Russell",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy"
+  },
+  {
+    "title": "Freakonomics",
+    "author": "Steven D. Levitt",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "The Sea of Monsters",
+    "author": "Rick Riordan",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Percy Jackson and the Olympians #2"
+  },
+  {
+    "title": "The Gunslinger",
+    "author": "Stephen King",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Dark Tower #1"
+  },
+  {
+    "title": "Rebecca",
+    "author": "Daphne du Maurier",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Steppenwolf",
+    "author": "Hermann Hesse",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
   }
 ]

@@ -77,14 +77,22 @@ const Book = ({ book }) => (
   </details>
 );
 
+// Anything read before 2019 — including books whose read date is lost, filed
+// under a 1900 sentinel — lands in a single "Earlier" bucket rather than a
+// long tail of thin year sections.
 const groupByYear = (entries) => {
   const years = new Map();
   for (const book of entries) {
     const year = book.borrowed.slice(0, 4);
-    if (!years.has(year)) years.set(year, []);
-    years.get(year).push(book);
+    const key = year < '2019' ? 'Earlier' : year;
+    if (!years.has(key)) years.set(key, []);
+    years.get(key).push(book);
   }
-  return [...years.entries()].sort(([a], [b]) => b.localeCompare(a));
+  return [...years.entries()].sort(([a], [b]) => {
+    if (a === 'Earlier') return 1;
+    if (b === 'Earlier') return -1;
+    return b.localeCompare(a);
+  });
 };
 
 const Reading = () => {
