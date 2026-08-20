@@ -1897,7 +1897,8 @@
     "series": "",
     "blurb": "Billy Pilgrim comes unstuck in time between Dresden's firebombing and the aliens of Tralfamadore.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Thrust",
@@ -3881,5 +3882,814 @@
     "borrowed": "1900-01-01",
     "unfinished": false,
     "theme": "literary"
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "highlight": true
+  },
+  {
+    "title": "Zen and the Art of Motorcycle Maintenance",
+    "author": "Robert M. Pirsig",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "ideas",
+    "highlight": true
+  },
+  {
+    "title": "Thus Spoke Zarathustra",
+    "author": "Friedrich Nietzsche",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "ideas"
+  },
+  {
+    "title": "2001: A Space Odyssey",
+    "author": "Arthur C. Clarke",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Space Odyssey #1"
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi"
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets: Sheet Music for Flute",
+    "author": "John Williams",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "craft"
+  },
+  {
+    "title": "Atlas Shrugged",
+    "author": "Ayn Rand",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Bourne Identity",
+    "author": "Robert Ludlum",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "Jason Bourne #1"
+  },
+  {
+    "title": "The Master and Margarita",
+    "author": "Mikhail Bulgakov",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "Islands in the Stream",
+    "author": "Ernest Hemingway",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Death at La Fenice",
+    "author": "Donna Leon",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "Commissario Brunetti #1"
+  },
+  {
+    "title": "Life of Pi",
+    "author": "Yann Martel",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "A Sea of Troubles",
+    "author": "Donna Leon",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "Commissario Brunetti #10"
+  },
+  {
+    "title": "The Complete Poems of Emily Dickinson",
+    "author": "Emily Dickinson",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "A Game of Thrones",
+    "author": "George R.R. Martin",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "A Song of Ice and Fire #1"
+  },
+  {
+    "title": "The Golden Compass",
+    "author": "Philip Pullman",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "His Dark Materials #1",
+    "highlight": true
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy"
+  },
+  {
+    "title": "The Subtle Knife",
+    "author": "Philip Pullman",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "His Dark Materials #2",
+    "highlight": true
+  },
+  {
+    "title": "In the Heart of the Sea",
+    "author": "Nathaniel Philbrick",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "history",
+    "highlight": true
+  },
+  {
+    "title": "On the Road",
+    "author": "Jack Kerouac",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "The White Tiger",
+    "author": "Aravind Adiga",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Amber Spyglass",
+    "author": "Philip Pullman",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "His Dark Materials #3",
+    "highlight": true
+  },
+  {
+    "title": "Sputnik Sweetheart",
+    "author": "Haruki Murakami",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "Rendezvous with Rama",
+    "author": "Arthur C. Clarke",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Rama #1"
+  },
+  {
+    "title": "Extremely Loud & Incredibly Close",
+    "author": "Jonathan Safran Foer",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "In Cold Blood",
+    "author": "Truman Capote",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "American Gods",
+    "author": "Neil Gaiman",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "American Gods #1"
+  },
+  {
+    "title": "Les Fleurs du Mal",
+    "author": "Charles Baudelaire",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Drawing of the Three",
+    "author": "Stephen King",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Dark Tower #2"
+  },
+  {
+    "title": "Howl and Other Poems",
+    "author": "Allen Ginsberg",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Walden",
+    "author": "Henry David Thoreau",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "ideas"
+  },
+  {
+    "title": "The 39 Steps",
+    "author": "John Buchan",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "Richard Hannay #1",
+    "highlight": true
+  },
+  {
+    "title": "What I Talk About When I Talk About Running",
+    "author": "Haruki Murakami",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "memoir"
+  },
+  {
+    "title": "Breakfast at Tiffany's and Three Stories",
+    "author": "Truman Capote",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Wind-Up Bird Chronicle",
+    "author": "Haruki Murakami",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Giver",
+    "author": "Lois Lowry",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "The Giver #1",
+    "highlight": true
+  },
+  {
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Candide",
+    "author": "Voltaire",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Prophet",
+    "author": "Kahlil Gibran",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "ideas"
+  },
+  {
+    "title": "Norwegian Wood",
+    "author": "Haruki Murakami",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "The Trial",
+    "author": "Franz Kafka",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "The Hitchhiker's Guide to the Galaxy #1"
+  },
+  {
+    "title": "Oryx and Crake",
+    "author": "Margaret Atwood",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "MaddAddam #1",
+    "highlight": true
+  },
+  {
+    "title": "Dr. Jekyll and Mr. Hyde",
+    "author": "Robert Louis Stevenson",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Into the Wild",
+    "author": "Jon Krakauer",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "memoir",
+    "highlight": true
+  },
+  {
+    "title": "Love in the Time of Cholera",
+    "author": "Gabriel García Márquez",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "Angels & Demons",
+    "author": "Dan Brown",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "Robert Langdon #1"
+  },
+  {
+    "title": "The Lightning Thief",
+    "author": "Rick Riordan",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Percy Jackson and the Olympians #1"
+  },
+  {
+    "title": "The Pillars of the Earth",
+    "author": "Ken Follett",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "series": "Kingsbridge #1"
+  },
+  {
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Curious Incident of the Dog in the Night-Time",
+    "author": "Mark Haddon",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Demian",
+    "author": "Hermann Hesse",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Metro 2033",
+    "author": "Dmitry Glukhovsky",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Metro #1"
+  },
+  {
+    "title": "Kafka on the Shore",
+    "author": "Haruki Murakami",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "The Year of the Flood",
+    "author": "Margaret Atwood",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "MaddAddam #2",
+    "highlight": true
+  },
+  {
+    "title": "The Magicians",
+    "author": "Lev Grossman",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Magicians #1"
+  },
+  {
+    "title": "One Day",
+    "author": "David Nicholls",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Ender's Game, Volume 1: Battle School",
+    "author": "Christopher Yost",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi"
+  },
+  {
+    "title": "Rework",
+    "author": "Jason Fried",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "Freedom",
+    "author": "Jonathan Franzen",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "Erebos",
+    "author": "Ursula Poznanski",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "Erebos #1"
+  },
+  {
+    "title": "The Magician King",
+    "author": "Lev Grossman",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Magicians #2",
+    "highlight": true
+  },
+  {
+    "title": "Rivers of London",
+    "author": "Ben Aaronovitch",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Rivers of London #1",
+    "highlight": true
+  },
+  {
+    "title": "Moon Over Soho",
+    "author": "Ben Aaronovitch",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Rivers of London #2",
+    "highlight": true
+  },
+  {
+    "title": "Whispers Under Ground",
+    "author": "Ben Aaronovitch",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Rivers of London #3",
+    "highlight": true
+  },
+  {
+    "title": "Harry Potter and the Methods of Rationality",
+    "author": "Eliezer Yudkowsky",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy"
+  },
+  {
+    "title": "The Waste Land and Other Poems",
+    "author": "T.S. Eliot",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Cirkeln",
+    "author": "Mats Strandberg",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Engelsfors #1"
+  },
+  {
+    "title": "Discount Armageddon",
+    "author": "Seanan McGuire",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "InCryptid #1"
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "ideas"
+  },
+  {
+    "title": "1Q84 Book 1",
+    "author": "Haruki Murakami",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "series": "1Q84 #1"
+  },
+  {
+    "title": "Eld",
+    "author": "Mats Strandberg",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Engelsfors #2"
+  },
+  {
+    "title": "Two or Three Things I Forgot to Tell You",
+    "author": "Joyce Carol Oates",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "This Is How You Lose Her",
+    "author": "Junot Díaz",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "The Dirty Streets of Heaven",
+    "author": "Tad Williams",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Bobby Dollar #1"
+  },
+  {
+    "title": "Harry Potter and the Order of the Phoenix",
+    "author": "J.K. Rowling",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Harry Potter #5",
+    "highlight": true
+  },
+  {
+    "title": "You Had Me At Hello",
+    "author": "Mhairi McFarlane",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Lightning Thief: The Graphic Novel",
+    "author": "Robert Venditti",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy"
+  },
+  {
+    "title": "Broken Homes",
+    "author": "Ben Aaronovitch",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Rivers of London #4"
+  },
+  {
+    "title": "Brilliance",
+    "author": "Marcus Sakey",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Brilliance Saga #1"
+  },
+  {
+    "title": "The Luminaries",
+    "author": "Eleanor Catton",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Magician's Land",
+    "author": "Lev Grossman",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Magicians #3",
+    "highlight": true
+  },
+  {
+    "title": "Foxglove Summer",
+    "author": "Ben Aaronovitch",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Rivers of London #5",
+    "highlight": true
+  },
+  {
+    "title": "The Paper Magician",
+    "author": "Charlie N. Holmberg",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Paper Magician #1"
+  },
+  {
+    "title": "A Better World",
+    "author": "Marcus Sakey",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Brilliance Saga #2"
+  },
+  {
+    "title": "Design Thinking Research",
+    "author": "Hasso Plattner",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "The Glass Magician",
+    "author": "Charlie N. Holmberg",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Paper Magician #2"
+  },
+  {
+    "title": "It's Not Me, It's You",
+    "author": "Mhairi McFarlane",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Master Magician",
+    "author": "Charlie N. Holmberg",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Paper Magician #3"
+  },
+  {
+    "title": "The Unexpected Gift of Joseph Bridgeman",
+    "author": "Nick Jones",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "The Downstream Diaries #1"
+  },
+  {
+    "title": "The Business Blockchain",
+    "author": "William Mougayar",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "Svenska gummistövlar",
+    "author": "Henning Mankell",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary",
+    "series": "Fredrik Welin #2"
+  },
+  {
+    "title": "Middlegame",
+    "author": "Seanan McGuire",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Alchemical Journeys #1",
+    "highlight": true
+  },
+  {
+    "title": "The Spy and the Traitor",
+    "author": "Ben Macintyre",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "spy"
+  },
+  {
+    "title": "Science of Running",
+    "author": "Chris Napier",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "craft"
+  },
+  {
+    "title": "Dikter",
+    "author": "Karin Boye",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Exhalation",
+    "author": "Ted Chiang",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "highlight": true
   }
 ]
