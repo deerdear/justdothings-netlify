@@ -2658,5 +2658,41 @@
     "borrowed": "2024-01-01",
     "unfinished": false,
     "theme": "literary"
+  },
+  {
+    "title": "The New Map",
+    "author": "Daniel Yergin",
+    "borrowed": "2024-01-01",
+    "unfinished": false,
+    "theme": "geopolitics"
+  },
+  {
+    "title": "Axiomatic",
+    "author": "Greg Egan",
+    "borrowed": "2024-01-01",
+    "unfinished": false,
+    "theme": "scifi"
+  },
+  {
+    "title": "Yellowface",
+    "author": "R.F. Kuang",
+    "borrowed": "2023-12-26",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Cloud Cuckoo Land",
+    "author": "Anthony Doerr",
+    "borrowed": "2023-10-09",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Rising Tiger",
+    "author": "Brad Thor",
+    "borrowed": "2023-10-01",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "Scot Harvath #21"
   }
 ]
