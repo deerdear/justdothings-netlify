@@ -915,7 +915,8 @@
     "series": "",
     "blurb": "A smuggler in the Moon's only city takes a sabotage job that goes badly wrong.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Ninefox Gambit",
@@ -3013,7 +3014,8 @@
     "borrowed": "2021-01-06",
     "unfinished": false,
     "theme": "spy",
-    "series": "George Smiley #5"
+    "series": "George Smiley #5",
+    "highlight": true
   },
   {
     "title": "Running the Dream",
@@ -3035,14 +3037,16 @@
     "author": "Amor Towles",
     "borrowed": "2020-12-12",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The Year of Magical Thinking",
     "author": "Joan Didion",
     "borrowed": "2020-12-04",
     "unfinished": false,
-    "theme": "memoir"
+    "theme": "memoir",
+    "highlight": true
   },
   {
     "title": "The Glass Hotel",
@@ -3073,7 +3077,8 @@
     "borrowed": "2020-11-04",
     "unfinished": false,
     "theme": "fantasy",
-    "series": "His Dark Materials #3.5"
+    "series": "His Dark Materials #3.5",
+    "highlight": true
   },
   {
     "title": "The Irresistible Inheritance of Wilberforce",
@@ -3109,14 +3114,16 @@
     "author": "Stuart Russell",
     "borrowed": "2020-08-08",
     "unfinished": false,
-    "theme": "science"
+    "theme": "science",
+    "highlight": true
   },
   {
     "title": "No Longer Human",
     "author": "Osamu Dazai",
     "borrowed": "2020-07-30",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The Slow Regard of Silent Things",
@@ -3131,7 +3138,8 @@
     "author": "David Deutsch",
     "borrowed": "2020-07-28",
     "unfinished": false,
-    "theme": "science"
+    "theme": "science",
+    "highlight": true
   },
   {
     "title": "Nomad: From Islam to America",
@@ -3145,7 +3153,8 @@
     "author": "Ottessa Moshfegh",
     "borrowed": "2020-07-09",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The Family Upstairs",
@@ -3167,7 +3176,8 @@
     "author": "Madeline Miller",
     "borrowed": "2020-06-13",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The City in the Middle of the Night",
@@ -3181,7 +3191,8 @@
     "author": "Madeline Miller",
     "borrowed": "2020-06-01",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "Le monde du silence",
@@ -3195,14 +3206,16 @@
     "author": "William Finnegan",
     "borrowed": "2020-04-30",
     "unfinished": false,
-    "theme": "memoir"
+    "theme": "memoir",
+    "highlight": true
   },
   {
     "title": "Every Man Dies Alone",
     "author": "Hans Fallada",
     "borrowed": "2020-04-23",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The Hanging Tree",
@@ -3225,7 +3238,8 @@
     "author": "Ted Chiang",
     "borrowed": "2020-04-04",
     "unfinished": false,
-    "theme": "scifi"
+    "theme": "scifi",
+    "highlight": true
   },
   {
     "title": "Mindf*ck",
@@ -3239,7 +3253,8 @@
     "author": "James Baldwin",
     "borrowed": "2020-03-29",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "Magic for Liars",
@@ -3260,14 +3275,16 @@
     "author": "Clifford Stoll",
     "borrowed": "2020-02-19",
     "unfinished": false,
-    "theme": "spy"
+    "theme": "spy",
+    "highlight": true
   },
   {
     "title": "Permanent Record",
     "author": "Edward Snowden",
     "borrowed": "2020-02-07",
     "unfinished": false,
-    "theme": "memoir"
+    "theme": "memoir",
+    "highlight": true
   },
   {
     "title": "Mordet på kommendören: Andra boken",
@@ -3282,7 +3299,8 @@
     "author": "Lina Wolff",
     "borrowed": "2020-01-11",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The Secret Commonwealth",
@@ -3290,7 +3308,8 @@
     "borrowed": "2020-01-04",
     "unfinished": false,
     "theme": "fantasy",
-    "series": "The Book of Dust #2"
+    "series": "The Book of Dust #2",
+    "highlight": true
   },
   {
     "title": "Once Upon a Time in the North",
@@ -3306,7 +3325,8 @@
     "borrowed": "2020-01-01",
     "unfinished": false,
     "theme": "fantasy",
-    "series": "Rivers of London #7"
+    "series": "Rivers of London #7",
+    "highlight": true
   },
   {
     "title": "Killing Commendatore",
@@ -3343,14 +3363,16 @@
     "author": "Terry Pratchett, Neil Gaiman",
     "borrowed": "2019-09-14",
     "unfinished": false,
-    "theme": "fantasy"
+    "theme": "fantasy",
+    "highlight": true
   },
   {
     "title": "Why Nations Fail",
     "author": "Daron Acemoğlu",
     "borrowed": "2019-09-07",
     "unfinished": false,
-    "theme": "geopolitics"
+    "theme": "geopolitics",
+    "highlight": true
   },
   {
     "title": "Waking Gods",
@@ -3381,7 +3403,8 @@
     "author": "Alan Hollinghurst",
     "borrowed": "2019-07-18",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "Le Grand Meaulnes",
@@ -3403,7 +3426,8 @@
     "author": "Cal Newport",
     "borrowed": "2019-06-16",
     "unfinished": false,
-    "theme": "craft"
+    "theme": "craft",
+    "highlight": true
   },
   {
     "title": "The Girl in the Tower",
@@ -3411,7 +3435,8 @@
     "borrowed": "2019-06-07",
     "unfinished": false,
     "theme": "fantasy",
-    "series": "The Winternight Trilogy #2"
+    "series": "The Winternight Trilogy #2",
+    "highlight": true
   },
   {
     "title": "Det osynliga barnet",
@@ -3434,7 +3459,8 @@
     "borrowed": "2019-05-15",
     "unfinished": false,
     "theme": "fantasy",
-    "series": "The Book of Dust #1"
+    "series": "The Book of Dust #1",
+    "highlight": true
   },
   {
     "title": "The Name of the Wind",
@@ -3521,7 +3547,8 @@
     "author": "Jonathan Holslag",
     "borrowed": "2019-01-12",
     "unfinished": false,
-    "theme": "history"
+    "theme": "history",
+    "highlight": true
   },
   {
     "title": "The Kremlin's Candidate",
@@ -3536,7 +3563,8 @@
     "author": "Italo Calvino",
     "borrowed": "2018-12-17",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "How to Bake Pi",
@@ -3550,7 +3578,8 @@
     "author": "Leo Tolstoy",
     "borrowed": "2018-11-14",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The Crying of Lot 49",
@@ -3564,7 +3593,8 @@
     "author": "Charlie Jane Anders",
     "borrowed": "2018-08-26",
     "unfinished": false,
-    "theme": "scifi"
+    "theme": "scifi",
+    "highlight": true
   },
   {
     "title": "Mr. Churchill's Secretary",
@@ -3632,7 +3662,8 @@
     "borrowed": "2018-05-16",
     "unfinished": false,
     "theme": "scifi",
-    "series": "Remembrance of Earth's Past #3"
+    "series": "Remembrance of Earth's Past #3",
+    "highlight": true
   },
   {
     "title": "Altered Carbon",
@@ -3648,14 +3679,16 @@
     "borrowed": "2018-04-29",
     "unfinished": false,
     "theme": "scifi",
-    "series": "Remembrance of Earth's Past #2"
+    "series": "Remembrance of Earth's Past #2",
+    "highlight": true
   },
   {
     "title": "Call Me by Your Name",
     "author": "André Aciman",
     "borrowed": "2018-04-15",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The Trinity Six",
@@ -3717,14 +3750,16 @@
     "borrowed": "2018-01-01",
     "unfinished": false,
     "theme": "fantasy",
-    "series": "The Winternight Trilogy #1"
+    "series": "The Winternight Trilogy #1",
+    "highlight": true
   },
   {
     "title": "Alif the Unseen",
     "author": "G. Willow Wilson",
     "borrowed": "2017-12-22",
     "unfinished": false,
-    "theme": "fantasy"
+    "theme": "fantasy",
+    "highlight": true
   },
   {
     "title": "The DAO of Capital",
@@ -3745,14 +3780,16 @@
     "author": "Yuval Noah Harari",
     "borrowed": "2017-08-29",
     "unfinished": false,
-    "theme": "history"
+    "theme": "history",
+    "highlight": true
   },
   {
     "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
     "author": "Haruki Murakami",
     "borrowed": "2015-12-29",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "Ender's Shadow",
@@ -3775,7 +3812,8 @@
     "author": "Charles Bukowski",
     "borrowed": "2014-02-01",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "Hateship, Friendship, Courtship, Loveship, Marriage",
@@ -3796,7 +3834,8 @@
     "author": "Gary Russell",
     "borrowed": "1900-01-01",
     "unfinished": false,
-    "theme": "fantasy"
+    "theme": "fantasy",
+    "highlight": true
   },
   {
     "title": "Freakonomics",
@@ -3833,7 +3872,8 @@
     "author": "Hermann Hesse",
     "borrowed": "1900-01-01",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The Old Man and the Sea",
