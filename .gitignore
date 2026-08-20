@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local tool artifacts
+.anyclaude/
+.playwright-mcp/
