@@ -730,7 +730,8 @@
     "series": "",
     "blurb": "Bodies keep appearing beside white murder victims in Mississippi, each resembling Emmett Till; savage satire.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Shadow War",
@@ -856,7 +857,8 @@
     "series": "Children of Time #1",
     "blurb": "A terraforming experiment goes wrong and uplifts spiders instead of monkeys, while humanity's last ark ship approaches.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Children of Ruin",
@@ -1181,7 +1183,8 @@
     "series": "",
     "blurb": "A flu kills most of humanity; twenty years on a Travelling Symphony performs Shakespeare across the Great Lakes.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Dune Messiah",
@@ -1209,7 +1212,8 @@
     "series": "",
     "blurb": "A Paris–New York flight lands twice, months apart, with two identical sets of passengers.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Second Foundation",
@@ -1350,7 +1354,8 @@
     "series": "",
     "blurb": "Hardboiled detective in a world where the ultra-rich dose themselves into giants.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Woken Furies",
@@ -1449,7 +1454,8 @@
     "series": "Rivers of London #9",
     "blurb": "Peter Grant investigates a killing tied to a set of magical rings and an avenging figure.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Stone and Sky",
@@ -2049,7 +2055,8 @@
     "series": "",
     "blurb": "Brisk polemical sweep arguing an east/west fault line runs through German history.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "A History of Warfare",
@@ -2657,21 +2664,24 @@
     "author": "Fyodor Dostoevsky",
     "borrowed": "2024-01-01",
     "unfinished": false,
-    "theme": "literary"
+    "theme": "literary",
+    "highlight": true
   },
   {
     "title": "The New Map",
     "author": "Daniel Yergin",
     "borrowed": "2024-01-01",
     "unfinished": false,
-    "theme": "geopolitics"
+    "theme": "geopolitics",
+    "highlight": true
   },
   {
     "title": "Axiomatic",
     "author": "Greg Egan",
     "borrowed": "2024-01-01",
     "unfinished": false,
-    "theme": "scifi"
+    "theme": "scifi",
+    "highlight": true
   },
   {
     "title": "Yellowface",
@@ -2694,5 +2704,286 @@
     "unfinished": false,
     "theme": "thriller",
     "series": "Scot Harvath #21"
+  },
+  {
+    "title": "Chip War",
+    "author": "Chris Miller",
+    "borrowed": "2023-01-28",
+    "unfinished": false,
+    "theme": "geopolitics",
+    "highlight": true
+  },
+  {
+    "title": "Foundation and Earth",
+    "author": "Isaac Asimov",
+    "borrowed": "2022-07-26",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Foundation #5"
+  },
+  {
+    "title": "Forward the Foundation",
+    "author": "Isaac Asimov",
+    "borrowed": "2022-07-26",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Foundation #7"
+  },
+  {
+    "title": "Prelude to Foundation",
+    "author": "Isaac Asimov",
+    "borrowed": "2022-06-26",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Foundation #6"
+  },
+  {
+    "title": "Foundation's Edge",
+    "author": "Isaac Asimov",
+    "borrowed": "2022-06-26",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Foundation #4"
+  },
+  {
+    "title": "Foundation and Empire",
+    "author": "Isaac Asimov",
+    "borrowed": "2022-04-26",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Foundation #2"
+  },
+  {
+    "title": "Wellen",
+    "author": "Heinz Helle",
+    "borrowed": "2022-03-03",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "The Hidden Palace",
+    "author": "Helene Wecker",
+    "borrowed": "2022-01-03",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Golem and the Jinni #2"
+  },
+  {
+    "title": "No Rules Rules",
+    "author": "Reed Hastings",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "A Fatal Grace",
+    "author": "Louise Penny",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "Chief Inspector Armand Gamache #2"
+  },
+  {
+    "title": "Gomorra",
+    "author": "Roberto Saviano",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "thriller"
+  },
+  {
+    "title": "Foundation",
+    "author": "Isaac Asimov",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Foundation #1"
+  },
+  {
+    "title": "The Eye of the World",
+    "author": "Robert Jordan",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "The Wheel of Time #1"
+  },
+  {
+    "title": "The Nearest Exit",
+    "author": "Olen Steinhauer",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "Milo Weaver #2"
+  },
+  {
+    "title": "Venture Deals",
+    "author": "Brad Feld",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "An American Spy",
+    "author": "Olen Steinhauer",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "Milo Weaver #3"
+  },
+  {
+    "title": "Stenträdet",
+    "author": "Stefan Einhorn",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "ideas"
+  },
+  {
+    "title": "Safe Haven",
+    "author": "Mark Spitznagel",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "Earthlings",
+    "author": "Sayaka Murata",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Agent Running in the Field",
+    "author": "John le Carré",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "spy"
+  },
+  {
+    "title": "Silverview",
+    "author": "John le Carré",
+    "borrowed": "2022-01-01",
+    "unfinished": false,
+    "theme": "spy"
+  },
+  {
+    "title": "Call for the Dead",
+    "author": "John le Carré",
+    "borrowed": "2021-12-29",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "George Smiley #1"
+  },
+  {
+    "title": "The Faithful Spy",
+    "author": "Alex Berenson",
+    "borrowed": "2021-12-29",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "John Wells #1"
+  },
+  {
+    "title": "The Tourist",
+    "author": "Olen Steinhauer",
+    "borrowed": "2021-12-27",
+    "unfinished": false,
+    "theme": "spy",
+    "series": "Milo Weaver #1"
+  },
+  {
+    "title": "Aquarium",
+    "author": "Viktor Suvorov",
+    "borrowed": "2021-12-24",
+    "unfinished": false,
+    "theme": "spy"
+  },
+  {
+    "title": "To Be a Man",
+    "author": "Nicole Krauss",
+    "borrowed": "2021-12-10",
+    "unfinished": false,
+    "theme": "literary",
+    "highlight": true
+  },
+  {
+    "title": "On Having No Head",
+    "author": "Douglas E. Harding",
+    "borrowed": "2021-10-02",
+    "unfinished": false,
+    "theme": "ideas",
+    "highlight": true
+  },
+  {
+    "title": "A Rule Against Murder",
+    "author": "Louise Penny",
+    "borrowed": "2021-07-27",
+    "unfinished": false,
+    "theme": "thriller",
+    "series": "Chief Inspector Armand Gamache #4"
+  },
+  {
+    "title": "The Man Who Solved the Market",
+    "author": "Gregory Zuckerman",
+    "borrowed": "2021-06-19",
+    "unfinished": false,
+    "theme": "business"
+  },
+  {
+    "title": "The Thirty Names of Night",
+    "author": "Zeyn Joukhadar",
+    "borrowed": "2021-06-14",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Alaska",
+    "author": "James A. Michener",
+    "borrowed": "2021-05-28",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Snow Country",
+    "author": "Yasunari Kawabata",
+    "borrowed": "2021-04-12",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "borrowed": "2021-04-06",
+    "unfinished": false,
+    "theme": "scifi",
+    "series": "Dune #1"
+  },
+  {
+    "title": "A Hero of Our Time",
+    "author": "Mikhail Lermontov",
+    "borrowed": "2021-04-04",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "The Invention of Morel",
+    "author": "Adolfo Bioy Casares",
+    "borrowed": "2021-03-24",
+    "unfinished": false,
+    "theme": "literary"
+  },
+  {
+    "title": "Endure",
+    "author": "Alex Hutchinson",
+    "borrowed": "2021-03-20",
+    "unfinished": false,
+    "theme": "science",
+    "highlight": true
+  },
+  {
+    "title": "The 13½ Lives of Captain Bluebear",
+    "author": "Walter Moers",
+    "borrowed": "2021-02-22",
+    "unfinished": false,
+    "theme": "fantasy",
+    "series": "Zamonia #1"
   }
 ]
