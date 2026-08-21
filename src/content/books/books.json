@@ -2214,7 +2214,8 @@
     "series": "",
     "blurb": "How Apple trained China's electronics industry and made itself hostage to it.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Zero to One",
@@ -2443,7 +2444,8 @@
     "series": "",
     "blurb": "Isaacson's access-driven biography through Twitter, SpaceX and Tesla.",
     "uncertain": false,
-    "reviewed": true
+    "reviewed": true,
+    "highlight": true
   },
   {
     "title": "Leonardo da Vinci",
@@ -2623,14 +2625,15 @@
     "author": "Thomas S. Kuhn",
     "url": "",
     "format": "",
-    "borrowed": "2025",
+    "borrowed": "2025-01-01",
     "note": "",
     "unfinished": false,
     "theme": "ideas",
     "series": "",
     "blurb": "The book that gave us the paradigm shift: science advances not by steady accumulation but by crises in which an old framework collapses and a new one replaces it.",
     "uncertain": false,
-    "reviewed": false
+    "reviewed": false,
+    "highlight": true
   },
   {
     "title": "Technological Revolutions and Financial Capital",
@@ -2822,7 +2825,8 @@
     "author": "Brad Feld",
     "borrowed": "2022-01-01",
     "unfinished": false,
-    "theme": "business"
+    "theme": "business",
+    "highlight": true
   },
   {
     "title": "An American Spy",
@@ -3767,7 +3771,8 @@
     "author": "Mark Spitznagel",
     "borrowed": "2017-09-25",
     "unfinished": false,
-    "theme": "business"
+    "theme": "business",
+    "highlight": true
   },
   {
     "title": "Negotiating the Impossible",
@@ -4691,6 +4696,22 @@
     "borrowed": "1900-01-01",
     "unfinished": false,
     "theme": "scifi",
+    "highlight": true
+  },
+  {
+    "title": "House of Huawei",
+    "author": "Eva Dou",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "business",
+    "highlight": true
+  },
+  {
+    "title": "Principles",
+    "author": "Ray Dalio",
+    "borrowed": "1900-01-01",
+    "unfinished": false,
+    "theme": "business",
     "highlight": true
   }
 ]
