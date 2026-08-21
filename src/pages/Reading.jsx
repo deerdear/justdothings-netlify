@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import allBooks from '../content/books/books.json';
-import { THEMES, themeLabel } from '../content/books/themes';
+import { themeLabel } from '../content/books/themes';
 import Page from '../components/Page';
 
 // Titles marked "didn't actually read" during review stay in the file but
@@ -96,27 +96,44 @@ const groupByYear = (entries) => {
   });
 };
 
-// "All" plus one entry per theme, in the shared THEMES order.
+// The twelve fine-grained themes stay on each book's detail line; the filter
+// row works in broader strokes, plus the starred books as their own view.
+const FILTERS = [
+  { key: 'highlights', label: 'Highlights', test: (b) => b.highlight },
+  { key: 'scifi', label: 'Sci-Fi', themes: ['scifi'] },
+  { key: 'fantasy', label: 'Fantasy', themes: ['fantasy'] },
+  { key: 'fiction', label: 'Fiction', themes: ['literary', 'spy', 'thriller'] },
+  { key: 'biographies', label: 'Biographies', themes: ['memoir'] },
+  {
+    key: 'nonfiction',
+    label: 'Non-Fiction',
+    themes: ['history', 'geopolitics', 'business', 'ideas', 'science', 'craft'],
+  },
+];
+
 const FilterRow = ({ active, onPick }) => (
   <nav className="flex flex-wrap gap-x-5 gap-y-2">
-    {[[null, 'All'], ...THEMES].map(([key, label]) => (
+    {[{ key: null, label: 'All' }, ...FILTERS].map((f) => (
       <button
-        key={key ?? 'all'}
+        key={f.key ?? 'all'}
         type="button"
-        onClick={() => onPick(key)}
+        onClick={() => onPick(f.key)}
         className={`label transition-colors hover:text-oxblood ${
-          active === key ? 'text-oxblood' : ''
+          active === f.key ? 'text-oxblood' : ''
         }`}
       >
-        {label}
+        {f.label}
       </button>
     ))}
   </nav>
 );
 
 const Reading = () => {
-  const [theme, setTheme] = useState(null);
-  const shown = theme ? books.filter((book) => book.theme === theme) : books;
+  const [filterKey, setFilterKey] = useState(null);
+  const filter = FILTERS.find((f) => f.key === filterKey);
+  const shown = filter
+    ? books.filter(filter.test || ((b) => filter.themes.includes(b.theme)))
+    : books;
   const years = groupByYear(shown);
 
   return (
@@ -132,11 +149,11 @@ const Reading = () => {
           especially good ones.
         </p>
         <div className="mt-8">
-          <FilterRow active={theme} onPick={setTheme} />
+          <FilterRow active={filterKey} onPick={setFilterKey} />
         </div>
-        {theme && (
+        {filter && (
           <p className="mt-4 text-[0.95rem] italic text-ink-faint">
-            {shown.length} in {themeLabel(theme)}
+            {shown.length} in {filter.label}
           </p>
         )}
       </header>
