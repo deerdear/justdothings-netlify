@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        serif: ["'EB Garamond'", "Georgia", "Times New Roman", "serif"],
+        serif: ["'EB Garamond Variable'", "Georgia", "Times New Roman", "serif"],
       },
       colors: {
         // Semantic palette for the letterpress design. Prefer these in new code.

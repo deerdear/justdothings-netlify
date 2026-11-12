@@ -13,6 +13,31 @@ const readBody = (req) =>
     req.on("error", fail);
   });
 
+const LOCAL = /^(localhost|127\.0\.0\.1|\[::1\])(:\d+)?$/;
+
+// The endpoint writes to a file that gets committed and published, so only
+// the review page itself may call it: a loopback Host (blocks DNS rebinding)
+// and, when the browser sends one, a loopback Origin (blocks other sites
+// posting to localhost).
+const isLocalRequest = (req) => {
+  if (!LOCAL.test(req.headers.host || "")) return false;
+  const { origin } = req.headers;
+  if (!origin) return true;
+  try {
+    return LOCAL.test(new URL(origin).host);
+  } catch {
+    return false;
+  }
+};
+
+const assertSafeUrls = (books) => {
+  for (const book of books) {
+    if (book.url && !/^https:\/\//.test(String(book.url))) {
+      throw new Error(`url must be https: ${book.title || book.url}`);
+    }
+  }
+};
+
 /**
  * Dev-only endpoints backing the /reading/review tool, so annotating a book
  * writes straight to books.json instead of round-tripping through a download.
@@ -34,6 +59,12 @@ export default function booksPlugin() {
       server.middlewares.use("/__books", async (req, res) => {
         res.setHeader("Content-Type", "application/json");
 
+        if (!isLocalRequest(req)) {
+          res.statusCode = 403;
+          res.end(JSON.stringify({ ok: false, error: "forbidden" }));
+          return;
+        }
+
         if (req.method === "GET") {
           res.end(readFileSync(BOOKS, "utf8"));
           return;
@@ -45,6 +76,7 @@ export default function booksPlugin() {
             if (!Array.isArray(books) || books.length === 0) {
               throw new Error("expected a non-empty array of books");
             }
+            assertSafeUrls(books);
             writeFileSync(BOOKS, JSON.stringify(books, null, 2) + "\n");
             res.end(JSON.stringify({ ok: true, count: books.length }));
           } catch (err) {

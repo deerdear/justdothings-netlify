@@ -43,7 +43,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+    font-family: "EB Garamond Variable", Georgia, "Times New Roman", serif;
     /* Oldstyle figures sit on the baseline like a printed book; standard
        ligatures and kerning do the rest. */
     font-feature-settings: "onum" 1, "kern" 1, "liga" 1;
@@ -137,7 +137,7 @@
 }
 
 .font-mono {
-  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-family: "EB Garamond Variable", Georgia, "Times New Roman", serif;
 }
 
 ::-webkit-scrollbar {
